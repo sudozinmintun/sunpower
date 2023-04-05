@@ -173,7 +173,7 @@
                         </li>
 
                         <li class="">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
+                            <a href="{{ route('news.index') }}" style="font-weight: bold">
                                 @if (session('key') == 'jp')
                                     新着情報
                                 @else

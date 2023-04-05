@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Contact Us')
+@section('title', '- Contact Us')
 @section('content')
     <section class="inner-header divider parallax overlay-white-8" data-bg-img="{{ asset('data/contact.jpeg') }}">
         <div class="container pt-200 pb-200">
@@ -89,7 +89,12 @@
             <div class="section-title text-center">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2 class="text-uppercase font-28 mt-0"><span class="text-theme-colored">Contact</span> Us</h2>
+                        <h2 class="text-uppercase font-28 mt-0">
+                            <span class="text-theme-colored">
+                                Contact
+                            </span>
+                            Us
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -97,12 +102,11 @@
                 <div class="row">
                     <div class="col-md-12">
 
-                        <!-- Contact Form -->
-                        <form id="contact_form" name="contact_form" class="contact-form-transparent"
-                            action="{{ route('contact.index') }}" method="post">
+                        <form id="create-form" class="contact-form-transparent" action="{{ route('contact.index') }}"
+                            method="post">
                             @csrf
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label>
                                             @if (session('key') == 'jp')
@@ -112,10 +116,17 @@
                                             @endif
                                             <small>*</small>
                                         </label>
-                                        <input name="form_name" class="form-control" type="text" required="">
+                                        <input name="name" class="form-control" type="text"
+                                            value="{{ old('name') }}">
+                                        @error('name')
+                                            <div class="invalid-feedback text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label>
                                             @if (session('key') == 'jp')
@@ -125,12 +136,19 @@
                                             @endif
                                             <small>*</small>
                                         </label>
-                                        <input name="form_email" class="form-control required email" type="email">
+                                        <input name="email" class="form-control required email" type="email"
+                                            value="{{ old('email') }}">
+                                        @error('email')
+                                            <div class="invalid-feedback text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label>
                                             @if (session('key') == 'jp')
@@ -140,10 +158,17 @@
                                             @endif
                                             <small>*</small>
                                         </label>
-                                        <input name="form_subject" class="form-control required" type="text">
+                                        <input name="subject" class="form-control required" type="text"
+                                            value="{{ old('subject') }}">
+                                        @error('subject')
+                                            <div class="invalid-feedback text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label>
                                             @if (session('key') == 'jp')
@@ -152,23 +177,37 @@
                                                 Phone
                                             @endif
                                         </label>
-                                        <input name="form_phone" class="form-control" type="text">
+                                        <input name="phone" class="form-control" type="text"
+                                            value="{{ old('phone') }}">
+                                        @error('phone')
+                                            <div class="invalid-feedback text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
                                 </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>
+                                            @if (session('key') == 'jp')
+                                                具体的な内容
+                                            @else
+                                                Message
+                                            @endif
+                                        </label>
+                                        <textarea name="message" class="form-control required" rows="5">{{ old('message') }}</textarea>
+                                    </div>
+                                    @error('message')
+                                        <div class="invalid-feedback text-danger">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
                             </div>
+
                             <div class="form-group">
-                                <label>
-                                    @if (session('key') == 'jp')
-                                        具体的な内容
-                                    @else
-                                        Message
-                                    @endif
-                                </label>
-                                <textarea name="form_message" class="form-control required" rows="5"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-dark btn-theme-colored btn-flat btn-block"
-                                    data-loading-text="Please wait...">
+                                <button type="submit" class="btn btn-dark btn-theme-colored btn-flat btn-block">
                                     @if (session('key') == 'jp')
                                         今提出
                                     @else
@@ -177,36 +216,6 @@
                                 </button>
                             </div>
                         </form>
-
-                        <!-- Contact Form Validation-->
-                        <script type="text/javascript">
-                            $("#contact_form").validate({
-                                submitHandler: function(form) {
-                                    var form_btn = $(form).find('button[type="submit"]');
-                                    var form_result_div = '#form-result';
-                                    $(form_result_div).remove();
-                                    form_btn.before(
-                                        '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
-                                    );
-                                    var form_btn_old_msg = form_btn.html();
-                                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                                    $(form).ajaxSubmit({
-                                        dataType: 'json',
-                                        success: function(data) {
-                                            if (data.status === 'true') {
-                                                $(form).find('.form-control').val('');
-                                            }
-                                            form_btn.prop('disabled', false).html(form_btn_old_msg);
-                                            $(form_result_div).html(data.message).fadeIn('slow');
-                                            setTimeout(function() {
-                                                $(form_result_div).fadeOut('slow')
-                                            }, 6000);
-                                        }
-                                    });
-                                }
-                            });
-                        </script>
-
                     </div>
                 </div>
             </div>
@@ -214,4 +223,5 @@
     </section>
 @endsection
 @section('script')
+    {!! JsValidator::formRequest('App\Http\Requests\StoreContact', '#create-form') !!}
 @endsection
