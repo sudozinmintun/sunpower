@@ -87,11 +87,13 @@
                         </style>
                         <li class="bg-theme-colored text-white my-menu-btn" style="background: #4e4633 !important;">
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            @if (session('key') == 'jp')
-                                会社情報
-                            @else
-                                Profile
-                            @endif
+                            <a href="{{ route('about.index') }}" style="color: white;">
+                                @if (session('key') == 'jp')
+                                    会社情報
+                                @else
+                                    Profile
+                                @endif
+                            </a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                         </li>
 
@@ -163,7 +165,7 @@
 
 
                         <li class="">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
+                            <a href="{{ route('gallery.index') }}" style="font-weight: bold">
                                 @if (session('key') == 'jp')
                                     Gallery
                                 @else
