@@ -1,8 +1,29 @@
 @extends('layouts.main')
 @section('title', 'Home')
 @section('content')
+    <style>
+        .btn-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
 
-    <section class="divider" data-tm-bg-img="{{asset('assets/images/bg/b1.png')}}" data-tm-margin-top="-34px">
+        }
+
+        .btn-box .btn-call {
+            background: #065327 !important;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 5px 10px;
+
+        }
+    </style>
+
+
+    @include('layouts.book')
+
+    {{-- <section class="divider" data-tm-bg-img="{{ asset('assets/images/bg/b1.png') }}" data-tm-margin-top="-34px">
         <div class="container">
             <div class="section-content">
                 <div class="row">
@@ -73,83 +94,403 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="btn-box">
+            <a class="btn btn-call" href="https://api.whatsapp.com/send/?phone=%2B918527270999&amp;text&amp;app_absent=0">
+                <img src="https://superbattestation.com/images/whatsapp.gif" width="20" height="20" alt="whatsapp">
+                Whatsapp us +959 269 101 211</a>
+            <a href="tel:+959 269 101 211" class="btn btn-call" style="margin-left: 10px">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                &nbsp;Click To Call: +959 269 101 211
+            </a>
+        </div>
+    </div>
+    <!-- About Myanmar -->
+    <section data-tm-bg-color="#f5f5f5">
+        <div class="container pt-30 pb-30">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="rs-p-wp-fix"></p>
+                    <rs-module-wrap id="rev_slider_shop_boxed_wrapper" data-alias="shop-home" data-source="gallery"
+                        style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                        <rs-module id="rev_slider_shop_boxed" style="display:none;" data-version="6.0.8">
+                            <rs-slides>
+                                <rs-slide data-key="rs-15" data-title="Slide 2" data-thumb="{{ asset('data/a9.webp') }}"
+                                    data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
+                                    <img src="{{ asset('data/a9.webp') }}" title="1tp5" width="1920" height="1080"
+                                        data-bg="p:center bottom;" data-parallax="off" class="rev-slidebg" data-no-retina>
+                                    <rs-layer id="slider-3-slide-15-layer-14" data-type="text" class="text-theme-colored1"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,2px;yo:200px,224px,175px,305px;"
+                                        data-text="w:normal;s:26,20,18,17;l:34,36,30,30;fw:600;a:left,left,left,center;"
+                                        data-dim="w:auto,auto,auto,264px;h:42px,42px,38px,auto;" data-frame_0="y:bottom;"
+                                        data-frame_1="st:1260;sp:1000;sR:1260;"
+                                        data-frame_999="x:-50,-38,-28,-17;o:0;st:w;sp:1500;sR:6740;" style="z-index:14;">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-19" data-type="text" data-color="#333333"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:246px,270px,210px,345px;"
+                                        data-text="w:normal;s:78,52,48,42;l:91,64,56,48;fw:700;a:left,left,left,center;"
+                                        data-dim="w:652px,auto,auto,auto;h:189px,151px,126px,112px;"
+                                        data-frame_0="y:bottom;" data-frame_1="st:1700;sp:1000;sR:1700;"
+                                        data-frame_999="o:0;st:w;sp:1500;sR:6300;" style="z-index:13;">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-20" class="rev-btn bg-theme-colored1"
+                                        data-type="button" data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:500px,454px,405px,525px;"
+                                        data-text="w:normal;s:20,15,14,14;f:left,none,none,none;c:both,none,none,none;l:40,30,22,16;fw:500;a:left,left,left,center;"
+                                        data-flcr="f:left,none,none,none;c:both,none,none,none;"
+                                        data-dim="minh:0px,none,none,none;"
+                                        data-padding="t:10,8,10,12;r:60,46,46,46;b:10,8,10,12;l:60,46,46,46;"
+                                        data-border="bor:5px,5px,5px,5px;" data-frame_0="y:bottom;"
+                                        data-frame_1="st:2500;sp:1000;sR:2500;" data-frame_999="o:0;st:w;sp:1500;sR:5500;"
+                                        data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;bri:120%;" style="z-index:15;">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-22" data-type="shape" data-rsp_ch="on"
+                                        data-text="w:normal;s:20,15,11,6;l:0,19,14,8;" data-dim="w:100%;h:100%;"
+                                        data-basealign="slide" data-frame_0="x:-100%;" data-frame_0_mask="u:t;"
+                                        data-frame_1="sp:2000;" data-frame_1_mask="u:t;"
+                                        data-frame_999="x:-100%;o:0;st:w;sp:2000;" data-frame_999_mask="u:t;"
+                                        style="z-index:7;background-color:rgba(255,255,255,0.3);">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-31" class="rs-pxl-2" data-type="image"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:755px,577px,417px,-2px;yo:105px,184px,125px,95px;"
+                                        data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+                                        data-dim="w:588px,414px,368px,205px;h:442px,314px,268px,155px;"
+                                        data-frame_0="y:top;" data-frame_1="st:1350;sp:1000;sR:1350;"
+                                        data-frame_999="y:top;o:0;st:w;sp:2000;sR:6650;" style="z-index:8;"><img
+                                            src="" alt="drill1" data-no-retina>
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-32" data-type="text" data-color="#8e8e8e"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:445px,418px,340px,455px;"
+                                        data-text="w:normal;s:20,18,16,15;l:43,32,24,24;fw:600;a:left,left,left,center;"
+                                        data-dim="w:auto,auto,221px,auto;h:auto,auto,auto,35px;" data-frame_0="y:bottom;"
+                                        data-frame_1="st:2120;sp:1000;sR:2120;"
+                                        data-frame_999="x:-50,-38,-28,-17;o:0;st:w;sp:1500;sR:5880;" style="z-index:12;">
+                                    </rs-layer>
+                                </rs-slide>
 
 
-    <section class="">
-        <div class="container pt--100 pt-lg-140" data-tm-padding-bottom="50px">
-            <div class="section-content mt-lg--0" data-tm-margin-top="-70px">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <div class="tm-sc-service service-item-current-style2">
-                            <div class="service-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/a1.png') }}" alt="1.jpg">
+                                <rs-slide data-key="rs-15" data-title="Slide 2" data-thumb="{{ asset('data/a10.jpg') }}"
+                                    data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
+                                    <img src="{{ asset('data/a10.jpg') }}" title="1tp5" width="1920" height="1080"
+                                        data-bg="p:center bottom;" data-parallax="off" class="rev-slidebg"
+                                        data-no-retina>
+                                    <rs-layer id="slider-3-slide-15-layer-14" data-type="text"
+                                        class="text-theme-colored1" data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,2px;yo:200px,224px,175px,305px;"
+                                        data-text="w:normal;s:26,20,18,17;l:34,36,30,30;fw:600;a:left,left,left,center;"
+                                        data-dim="w:auto,auto,auto,264px;h:42px,42px,38px,auto;" data-frame_0="y:bottom;"
+                                        data-frame_1="st:1260;sp:1000;sR:1260;"
+                                        data-frame_999="x:-50,-38,-28,-17;o:0;st:w;sp:1500;sR:6740;" style="z-index:14;">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-19" data-type="text" data-color="#333333"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:246px,270px,210px,345px;"
+                                        data-text="w:normal;s:78,52,48,42;l:91,64,56,48;fw:700;a:left,left,left,center;"
+                                        data-dim="w:652px,auto,auto,auto;h:189px,151px,126px,112px;"
+                                        data-frame_0="y:bottom;" data-frame_1="st:1700;sp:1000;sR:1700;"
+                                        data-frame_999="o:0;st:w;sp:1500;sR:6300;" style="z-index:13;">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-20" class="rev-btn bg-theme-colored1"
+                                        data-type="button" data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:500px,454px,405px,525px;"
+                                        data-text="w:normal;s:20,15,14,14;f:left,none,none,none;c:both,none,none,none;l:40,30,22,16;fw:500;a:left,left,left,center;"
+                                        data-flcr="f:left,none,none,none;c:both,none,none,none;"
+                                        data-dim="minh:0px,none,none,none;"
+                                        data-padding="t:10,8,10,12;r:60,46,46,46;b:10,8,10,12;l:60,46,46,46;"
+                                        data-border="bor:5px,5px,5px,5px;" data-frame_0="y:bottom;"
+                                        data-frame_1="st:2500;sp:1000;sR:2500;" data-frame_999="o:0;st:w;sp:1500;sR:5500;"
+                                        data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;bri:120%;" style="z-index:15;">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-22" data-type="shape" data-rsp_ch="on"
+                                        data-text="w:normal;s:20,15,11,6;l:0,19,14,8;" data-dim="w:100%;h:100%;"
+                                        data-basealign="slide" data-frame_0="x:-100%;" data-frame_0_mask="u:t;"
+                                        data-frame_1="sp:2000;" data-frame_1_mask="u:t;"
+                                        data-frame_999="x:-100%;o:0;st:w;sp:2000;" data-frame_999_mask="u:t;"
+                                        style="z-index:7;background-color:rgba(255,255,255,0.3);">
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-31" class="rs-pxl-2" data-type="image"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:755px,577px,417px,-2px;yo:105px,184px,125px,95px;"
+                                        data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+                                        data-dim="w:588px,414px,368px,205px;h:442px,314px,268px,155px;"
+                                        data-frame_0="y:top;" data-frame_1="st:1350;sp:1000;sR:1350;"
+                                        data-frame_999="y:top;o:0;st:w;sp:2000;sR:6650;" style="z-index:8;"><img
+                                            src="" alt="drill1" data-no-retina>
+                                    </rs-layer>
+                                    <rs-layer id="slider-3-slide-15-layer-32" data-type="text" data-color="#8e8e8e"
+                                        data-rsp_ch="on"
+                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:445px,418px,340px,455px;"
+                                        data-text="w:normal;s:20,18,16,15;l:43,32,24,24;fw:600;a:left,left,left,center;"
+                                        data-dim="w:auto,auto,221px,auto;h:auto,auto,auto,35px;" data-frame_0="y:bottom;"
+                                        data-frame_1="st:2120;sp:1000;sR:2120;"
+                                        data-frame_999="x:-50,-38,-28,-17;o:0;st:w;sp:1500;sR:5880;" style="z-index:12;">
+                                    </rs-layer>
+                                </rs-slide>
+
+                            </rs-slides>
+                            </rs-slides>
+                            <rs-progress class="rs-bottom" style="height: 5px; background: rgba(199,199,199,0.5);">
+                            </rs-progress>
+                        </rs-module>
+                    </rs-module-wrap>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tm-sc tm-sc-info-banner-advanced text-left mb-30">
+                        <div class="info-banner-inner">
+                            <div class="banner-image-wrapper">
+                                <img src="{{ asset('data/10.jpg') }}" alt="Image">
+                                <div class="banner-overlay"></div>
                             </div>
-                            <div class="service-content bg-theme-colored3">
-                                <h4 class="title text-white">Experience Yourself</h4>
-                                <p class="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-                                    omnis unde nesciunt?
-                                </p>
+                            <div class="info-banner-text-holder-wrapper">
+                                <div class="info-banner-text-holder">
+                                    <div class="info-banner-text-holder-inner">
+                                        <h2 class="text-theme-colored1">Why Choose Us</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <div class="tm-sc-service service-item-current-style2">
-                            <div class="service-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/a5.png') }}" alt="1.jpg">
+                    <div class="tm-sc tm-sc-info-banner-advanced text-left">
+                        <div class="info-banner-inner">
+                            <div class="banner-image-wrapper">
+                                <img src="{{ asset('data/m3.png') }}" alt="Image">
+                                <div class="banner-overlay"></div>
                             </div>
-                            <div class="service-content bg-theme-colored2">
-                                <h4 class="title text-white">Experience Yourself</h4>
-                                <p class="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-                                    omnis unde nesciunt?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <div class="tm-sc-service service-item-current-style2">
-                            <div class="service-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/a7.png') }}" alt="1.jpg">
-                            </div>
-                            <div class="service-content bg-theme-colored1">
-                                <h4 class="title text-white">Experience Yourself</h4>
-                                <p class="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-                                    omnis unde nesciunt?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <div class="tm-sc-service service-item-current-style2">
-                            <div class="service-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/a8.png') }}" alt="1.jpg">
-                            </div>
-                            <div class="service-content bg-theme-colored4">
-                                <h4 class="title text-white">Experience Yourself</h4>
-                                <p class="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-                                    omnis unde nesciunt?
-                                </p>
+                            <div class="info-banner-text-holder-wrapper">
+                                <div class="info-banner-text-holder">
+                                    <div class="info-banner-text-holder-inner">
+                                        <h2 class="text-theme-colored1"></h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="tm-floating-objects">
-            <span class="z-index-1 bg-img-cover" data-tm-bg-img="{{ asset('assets/images/bg/f2.png') }}"
-                data-tm-width="100%" data-tm-height="143" data-tm-top="auto" data-tm-bottom="0" data-tm-left="0"
-                data-tm-right="0" data-tm-opacity="-100px"></span>
-        </div>
     </section>
 
 
 
+    <section data-tm-bg-color="#f5f5f5">
+        <div class="container pt-30 pb-30">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive mb-lg-30">
+                        <div class="icon-box-wrapper">
+                            <a class="icon">
+                                <img src="{{ asset('assets/images/shop/shop-money-back-guarantee.png') }}" alt="Image">
+                            </a>
+                            <div class="icon-text">
+                                <h5 class="icon-box-title mt-0">Application & Recruitment</h5>
+                                <div class="content">
+                                    <p>Join Now</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive mb-lg-30">
+                        <div class="icon-box-wrapper">
+                            <a class="icon">
+                                <img src="{{ asset('assets/images/shop/shop-headphones.png') }}" alt="Image">
+                            </a>
+                            <div class="icon-text">
+                                <h5 class="icon-box-title mt-0">Support 24/7</h5>
+                                <div class="content">
+                                    <p>Call +959 269 101 211</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive mb-lg-30">
+                        <div class="icon-box-wrapper">
+                            <a class="icon">
+                                <img src="{{ asset('assets/images/shop/shop-money-back-guarantee.png') }}" alt="Image">
+                            </a>
+                            <div class="icon-text">
+                                <h5 class="icon-box-title mt-0">Candidates Services</h5>
+                                <div class="content">
+                                    <p>Let's join us.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive mb-lg-30">
+                        <div class="icon-box-wrapper">
+                            <a class="icon">
+                                <img src="{{ asset('assets/images/shop/shop-purchase.png') }}" alt="Image">
+                            </a>
+                            <div class="icon-text">
+                                <h5 class="icon-box-title mt-0">Press Release</h5>
+                                <div class="content">
+                                    <p>Fastest Read Now.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Section: divider -->
+    <!-- About Training -->
+    <section data-tm-bg-img="{{ asset('data/bg3.jpg') }}">
+        <div class="container">
+            <div class="section-title text-center mb-30">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>ABOUT<span class="text-theme-colored1">GA TRAINING</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- Isotope Gallery Grid -->
+                    <div id="product-gallery-holder-1111"
+                        class="isotope-layout grid-4 gutter-15 clearfix lightgallery-lightbox">
+                        <div class="isotope-layout-inner">
+                            <!-- Isotope Item Start -->
+                            <div class="isotope-item cat1 cat3">
+                                <div class="isotope-item-inner">
+                                    <div class="product">
+                                        <div class="product-header">
+                                            <div class="thumb image-swap">
+                                                <a href=""><img src="{{ asset('data/10.jpg') }}"
+                                                        class="product-main-image img-responsive img-fullwidth"
+                                                        width="300" height="300" alt="product"></a>
+                                                <a href=""><img src="{{ asset('data/10.jpg') }}"
+                                                        class="product-hover-image img-responsive img-fullwidth"
+                                                        alt="product"></a>
+                                            </div>
+                                            <div class="product-button-holder">
+                                                <ul class="shop-icons">
+                                                    <li class="item"><a href="#" class="button btn-quickview"
+                                                            title="Product quick view"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h5 class="product-title"> <a target="_self" href="#"
+                                                    class="btn btn-plain-text-with-arrow btn-sm"> Why Choose Myanmar </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Isotope Item End -->
+                            <!-- Isotope Item Start -->
+                            <div class="isotope-item cat1 cat3">
+                                <div class="isotope-item-inner">
+                                    <div class="product">
+                                        <div class="product-header">
+                                            <div class="thumb image-swap">
+                                                <a href=""><img src="{{ asset('data/m4.jpg') }}"
+                                                        class="product-main-image img-responsive img-fullwidth"
+                                                        width="300" height="300" alt="product"></a>
+                                                <a href=""><img src="{{ asset('data/m4.jpg') }}"
+                                                        class="product-hover-image img-responsive img-fullwidth"
+                                                        alt="product"></a>
+                                            </div>
+                                            <div class="product-button-holder">
+                                                <ul class="shop-icons">
+                                                    <li class="item"><a href="#" class="button btn-quickview"
+                                                            title="Product quick view"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h5 class="product-title"> <a target="_self" href="#"
+                                                    class="btn btn-plain-text-with-arrow btn-sm"> Ga Education </a></h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="isotope-item cat1 cat3">
+                                <div class="isotope-item-inner">
+                                    <div class="product">
+                                        <div class="product-header">
+                                            <div class="thumb image-swap">
+                                                <a href=""><img src="{{ asset('data/m7.jpg') }}"
+                                                        class="product-main-image img-responsive img-fullwidth"
+                                                        width="300" height="300" alt="product"></a>
+                                                <a href=""><img src="{{ asset('data/m7.jpg') }}"
+                                                        class="product-hover-image img-responsive img-fullwidth"
+                                                        alt="product"></a>
+                                            </div>
+                                            <div class="product-button-holder">
+                                                <ul class="shop-icons">
+                                                    <li class="item"><a href="#" class="button btn-quickview"
+                                                            title="Product quick view"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h5 class="product-title"> <a target="_self" href="#"
+                                                    class="btn btn-plain-text-with-arrow btn-sm"> Technical Intern Trainee
+                                                </a></h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Isotope Item End -->
+                            <!-- Isotope Item Start -->
+                            <div class="isotope-item cat1 cat3">
+                                <div class="isotope-item-inner">
+                                    <div class="product">
+                                        <div class="product-header">
+                                            <div class="thumb image-swap">
+                                                <a href=""><img src="{{ asset('data/m6.jpg') }}"
+                                                        class="product-main-image img-responsive img-fullwidth"
+                                                        width="300" height="300" alt="product"></a>
+                                                <a href=""><img src="{{ asset('data/m6.jpg') }}"
+                                                        class="product-hover-image img-responsive img-fullwidth"
+                                                        alt="product"></a>
+                                            </div>
+                                            <div class="product-button-holder">
+                                                <ul class="shop-icons">
+                                                    <li class="item"><a href="#" class="button btn-quickview"
+                                                            title="Product quick view"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h5 class="product-title"> <a target="_self" href="#"
+                                                    class="btn btn-plain-text-with-arrow btn-sm"> Specified Skill </a></h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Isotope Item End -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="divider bg-img-cover bg-img-center layer-overlay overlay-theme-colored2-7"
         data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
         <div class="container pt-50 pb-50">
@@ -159,7 +500,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-12">
-                                    <h5 class="title">ဂျပန်နိုင်ငံလုပ်ငန်းခွင်တွင်းသို့ရောက်ရှိနေသောမြန်မာလူငယ်များ
+                                    <h5 class="title">
+                                        ဂျပန်နိုင်ငံလုပ်ငန်းခွင်တွင်းသို့ရောက်ရှိနေသောမြန်မာလူငယ်များ
                                     </h5>
                                 </div>
                                 <div class="col-lg-4 col-12">
@@ -170,13 +512,315 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </section>
 
+    <section class="bg-img-cover bg-img-center" data-tm-bg-img="images/bg/p2.jpg">
+        <div class="container pb-md-120" data-tm-padding-bottom="205px">
+            <div class="section-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="tm-sc-section-title section-title text-center">
+                            <div class="title-wrapper">
+                                <h2 class="title">Our <span class="text-theme-colored3">Features</span></h2>
+                                <p>A variety of teaching methods of GA Training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="tm-sc-departments tm-sc-departments-tab">
+                            <ul class="nav nav-tabs">
+                                <li class="bg-theme-colored1 active"> <a href="#tab-music-tabs" class="active show"
+                                        data-bs-toggle="tab">
+                                        <i class="fab fa-renren"></i>
+                                        <h3>01 </h3>
+                                        <span>Our Native Teachers teach you real Japanese</span>
+                                    </a>
+                                </li>
+
+                                <li class="bg-theme-colored2">
+                                    <a href="#tab-painting-tabs" class="" data-bs-toggle="tab">
+                                        <i class="fab fa-renren"></i>
+                                        <h3>02 </h3>
+                                        <span>Why Shadowing Technique is very Effctive</span>
+                                    </a>
+                                </li>
+                                <li class="bg-theme-colored3">
+                                    <a href="#tab-painting-tabs" class="" data-bs-toggle="tab">
+                                        <i class="fab fa-renren"></i>
+                                        <h3>03 </h3>
+
+                                        <span>Teaching useful expressions focusing on situations..</span>
+                                    </a>
+                                </li>
+                                <li class="bg-theme-colored4">
+                                    <a href="#tab-sports-tabs" class="" data-bs-toggle="tab">
+                                        <i class="fab fa-renren"></i>
+                                        <h3>04 </h3>
+                                        <span>Prioritise student speaking time in class</span>
+                                    </a>
+                                </li>
+                                <li class="bg-theme-colored1">
+                                    <a href="#tab-sports-tabs" class="" data-bs-toggle="tab">
+                                        <i class="fab fa-renren"></i>
+                                        <h3>05 </h3>
+                                        <span>Join Now!</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active show" id="tab-music-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="tab-left-part mb-lg-40">
+                                                <h3 class="title mb-20 text-theme-colored1">Our Native Teachers teach you
+                                                    real Japanese</h3>
+                                                <p class="lead">
+                                                    GA Japanese Language School's Unique GA Teaching Method emphasises on
+                                                    the speaking component more so than the other.
+                                                </p>
+                                                <p>
+                                                    This unique teaching style is not available in many other Japanese
+                                                    language schools in Myanmar, which use traditional ways of teaching that
+                                                    limit progress.
+                                                </p>
+                                                <div class="row mb-20">
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Qualified Teacher</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Love & Care</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Conventional Style</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Strategi Location </li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Active Learning</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Transportation</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-contact d-flex flex-column flex-md-row">
+                                                    <a class="btn btn-sm btn-dark btn-theme-colored1" href="#">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-5">
+                                            <img src="{{ asset('data/f4.webp') }}" alt=""
+                                                class="w-100 mb-md-30">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-learn-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="tab-left-part mb-lg-40">
+                                                <h3 class="title mb-20 text-theme-colored2">Why Shadowing Technique is very
+                                                    Effctive</h3>
+                                                <p class="lead">
+                                                </p>
+                                                In shadowing practice, you listen to a short conversation and shadow after
+                                                it by immediately speaking exactly what you hear.
+                                                <p>
+                                                    It has proven to be a very useful method for learning languages,
+                                                    including Japanese.
+                                                </p>
+                                                <div class="row mb-20">
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored2 me-2"></i>
+                                                                    Qualified Teacher</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored2 me-2"></i>
+                                                                    Love & Care</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored2 me-2"></i>
+                                                                    Delicious Food</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored2 me-2"></i>
+                                                                    Strategi Location </li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored2 me-2"></i>
+                                                                    Active Learning</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored2 me-2"></i>
+                                                                    Transportation</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-contact d-flex flex-column flex-md-row">
+                                                    <a class="btn btn-sm btn-dark btn-theme-colored2" href="#">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-5">
+                                            <img src="{{ asset('data/f1.webp') }}" alt=""
+                                                class="w-100 mb-md-30">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-painting-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="tab-left-part mb-lg-40">
+                                                <h3 class="title mb-20 text-theme-colored3">We teach useful expressions
+                                                    focusing on situations that you are likely to be in</h3>
+                                                <p class="lead">
+                                                    It is of course important to learn grammar in a structured and careful
+                                                    way.
+                                                </p>
+                                                <p>
+                                                    However, we believe that is not enough to help our students to merely
+                                                    speak in grammatically correct or textbook Japanese.
+                                                </p>
+                                                <div class="row mb-20">
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored3 me-2"></i>
+                                                                    Qualified Teacher</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored3 me-2"></i>
+                                                                    Love & Care</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored3 me-2"></i>
+                                                                    Delicious Food</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored3 me-2"></i>
+                                                                    Strategi Location </li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored3 me-2"></i>
+                                                                    Active Learning</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored3 me-2"></i>
+                                                                    Transportation</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-contact d-flex flex-column flex-md-row">
+                                                    <a class="btn btn-sm btn-dark btn-theme-colored3" href="#">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-5">
+                                            <img src="{{ asset('data/f2.webp') }}" alt=""
+                                                class="w-100 mb-md-30">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-sports-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="tab-left-part mb-lg-40">
+                                                <h3 class="title mb-20 text-theme-colored1">Prioritise student speaking
+                                                    time in class</h3>
+                                                <p class="lead">
+                                                    Unknown to many, the way to master a language is to be able to speak it
+                                                    well.
+                                                </p>
+                                                <p>
+                                                    The skill of speaking, at least for the Japanese language, is the basis
+                                                    of communication.
+                                                </p>
+                                                <div class="row mb-20">
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Qualified Teacher</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Love & Care</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Delicious Food</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="tm-sc-unordered-list list-style">
+                                                            <ul class="list-unstyled text-black">
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Strategi Location </li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Active Learning</li>
+                                                                <li><i
+                                                                        class="icon fas fa-heart text-theme-colored1 me-2"></i>
+                                                                    Transportation</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-contact d-flex flex-column flex-md-row">
+                                                    <a class="btn btn-sm btn-dark btn-theme-colored1" href="">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-5">
+                                            <img src="{{ asset('data/f3.webp') }}" alt=""
+                                                class="w-100 mb-md-30">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-floating-objects">
+            <span class="z-index-1 bg-img-cover" data-tm-bg-img="{{ asset('images/bg/f2.png') }}" data-tm-width="100%"
+                data-tm-height="143" data-tm-top="auto" data-tm-bottom="0" data-tm-left="0" data-tm-right="0"
+                data-tm-opacity="-100px"></span>
+        </div>
+    </section>
     <!-- Section: Course -->
     <section class="bg-img-cover bg-img-center" data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
         <div class="container pb-50">
@@ -311,9 +955,119 @@
         </div>
     </section>
 
-    <!-- Section: Gallery -->
 
 
+    <!-- Case Study / Jobs Lists -->
+    <section class="">
+        <div class="container">
+            <div class="tm-sc-section-title section-title text-center">
+                <div class="title-wrapper">
+                    <h2 class="title">Case <span class="text-theme-colored3">Study</span></h2>
+                    <p>There are many variations of passages. But the majority have suffered alteration in
+                        some form, by injected humour, or randomised words.</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="timeline__content"
+                        style="background-color: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    color: #333;
+                    display: block;
+                    padding: 1.25rem;
+                    height:350px;
+                    background-color:#2f5597;">
+                        <div class="thumb">
+                            <img src="{{ asset('data/j1.jpg') }}" class="product-main-image img-responsive img-fullwidth"
+                                width="400" height="400" alt="product" ;>
+                        </div>
+                        <h5 style="color:white;">
+                            Construction Worker
+                        </h5>
+                        <p style="color:white;">Location:Japan</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="timeline__content"
+                        style="background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                color: #333;
+                display: block;
+                padding: 1.25rem;
+                height:350px;
+                background-color:#2f5597;">
+                        <div class="thumb">
+                            <img src="{{ asset('data/j2.jpg') }}" class="product-main-image img-responsive img-fullwidth"
+                                width="400" height="400" alt="product" ;>
+                        </div>
+                        <h5 style="color:white;">
+                            Manufacturing
+                        </h5>
+                        <p style="color:white;">
+                            Location:Japan
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="timeline__content"
+                        style="background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                color: #333;
+                display: block;
+                padding: 1.25rem;
+                height:350px;
+                background-color:#2f5597;">
+                        <div class="thumb">
+                            <img src="{{ asset('data/j4.jpg') }}" class="product-main-image img-responsive img-fullwidth"
+                                width="400" height="400" alt="product" ;>
+                        </div>
+                        <h5 style="color:white;">
+                            Kaigo
+                        </h5>
+                        <p style="color:white;">
+                            Location:Japan
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="timeline__content"
+                        style="background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                color: #333;
+                display: block;
+                padding: 1.25rem;
+                height:350px;
+                background-color:#2f5597;">
+                        <div class="thumb">
+                            <img src="{{ asset('data/j5.jpg') }}" class="product-main-image img-responsive img-fullwidth"
+                                width="400" height="400" alt="product" ;>
+                        </div>
+                        <h5 style="color:white;">
+                            Agriculture
+                        </h5>
+                        <p style="color:white;">
+                            Location:Japan
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Gallery -->
     <section data-tm-bg-color="#f5f5f5">
         <div class="container">
             <div class="section-title text-center mb-30">
@@ -341,12 +1095,13 @@
                                     <div class="product">
                                         <div class="product-header">
                                             <div class="thumb image-swap">
-                                                <a href="shop-product-details.html"><img
-                                                        src="{{ asset('assets/data/g8.jpg') }}"
+                                                <a href="">
+                                                    <img src="{{ asset('assets/data/g8.jpg') }}"
                                                         class="product-main-image img-responsive img-fullwidth"
-                                                        width="300" height="300" alt="product"></a>
-                                                <a href="shop-product-details.html"><img
-                                                        src="{{ asset('assets/data/g8.jpg') }}"
+                                                        width="300" height="300" alt="product">
+                                                </a>
+                                                <a href="">
+                                                    <img src="{{ asset('assets/data/g8.jpg') }}"
                                                         class="product-hover-image img-responsive img-fullwidth"
                                                         alt="product"></a>
                                             </div>
@@ -362,7 +1117,7 @@
                                         <div class="product-details">
                                             <span class="product-categories"><a href="#"
                                                     rel="tag">Music</a></span>
-                                            <h5 class="product-title"><a href="shop-product-details.html">Product
+                                            <h5 class="product-title"><a href="">Product
                                                     Title</a></h5>
                                             <span class="price">
                                                 <del><span class="amount"><span
@@ -382,12 +1137,10 @@
                                         <div class="product-header">
                                             <span class="onsale">Sale!</span>
                                             <div class="thumb image-swap">
-                                                <a href="shop-product-details.html"><img
-                                                        src="{{ asset('assets/data/g8.jpg') }}"
+                                                <a href=""><img src="{{ asset('assets/data/g8.jpg') }}"
                                                         class="product-main-image img-responsive img-fullwidth"
                                                         width="300" height="300" alt="product"></a>
-                                                <a href="shop-product-details.html"><img
-                                                        src="{{ asset('assets/data/g8.jpg') }}"
+                                                <a href=""><img src="{{ asset('assets/data/g8.jpg') }}"
                                                         class="product-hover-image img-responsive img-fullwidth"
                                                         alt="product"></a>
                                             </div>
@@ -403,7 +1156,7 @@
                                         <div class="product-details">
                                             <span class="product-categories"><a href="#"
                                                     rel="tag">Music</a></span>
-                                            <h5 class="product-title"><a href="shop-product-details.html">Product
+                                            <h5 class="product-title"><a href="">Product
                                                     Title</a></h5>
                                             <span class="price">
                                                 <del><span class="amount"><span
@@ -422,12 +1175,10 @@
                                     <div class="product">
                                         <div class="product-header">
                                             <div class="thumb image-swap">
-                                                <a href="shop-product-details.html"><img
-                                                        src="{{ asset('assets/data/g8.jpg') }}"
+                                                <a href=""><img src="{{ asset('assets/data/g8.jpg') }}"
                                                         class="product-main-image img-responsive img-fullwidth"
                                                         width="300" height="300" alt="product"></a>
-                                                <a href="shop-product-details.html"><img
-                                                        src="{{ asset('assets/data/g8.jpg') }}"
+                                                <a href=""><img src="{{ asset('assets/data/g8.jpg') }}"
                                                         class="product-hover-image img-responsive img-fullwidth"
                                                         alt="product"></a>
                                             </div>
@@ -443,7 +1194,7 @@
                                         <div class="product-details">
                                             <span class="product-categories"><a href="#"
                                                     rel="tag">Music</a></span>
-                                            <h5 class="product-title"><a href="shop-product-details.html">Product
+                                            <h5 class="product-title"><a href="">Product
                                                     Title</a></h5>
                                             <span class="price">
                                                 <del><span class="amount"><span
@@ -474,7 +1225,7 @@
                     <div class="col-lg-8 col-xl-6">
                         <div class="tm-sc-section-title section-title text-center">
                             <div class="title-wrapper">
-                                <h2 class="title">Our <span class="text-theme-colored3">Teachers</span></h2>
+                                <h2 class="title">Our <span class="text-theme-colored3">Team Members</span></h2>
                                 <p>There are many variations of passages. But the majority have suffered alteration in
                                     some form, by injected humour, or randomised words.</p>
                             </div>
@@ -484,387 +1235,59 @@
             </div>
             <div class="section-content">
                 <div class="row">
-                    <div class="col-sm-6 col-xl-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t1.jpg') }}" alt="team1.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored2">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
+                    @foreach ($teams as $team)
+                        <div class="col-sm-6 col-xl-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="team-member">
+                                <div class="team-thumb">
+                                    <img class="img-fullwidth" src="{{ $team->photo }}" alt=""
+                                        style="width: 100%; height: 250px; background-size: center; object-fit: cover;">
                                 </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored4 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
+                                <div class="team-details text-center bg-theme-colored1">
+                                    <div class="member-biography">
+                                        <h3 class="mt-0 text-white mb-0">
+                                            {{ $team->name ?? '' }}
+                                        </h3>
+                                        <p class="mb-0 text-white">
+                                            {{ $team->position ?? '' }}
+                                        </p>
+                                    </div>
+                                    <ul class="styled-icons icon-dark icon-md icon-theme-colored4 icon-circled pt-3">
+                                        <li>
+                                            <a href="https://www.facebook.com/GATrainingSchool/photos">
+                                                <i class="fab fa-facebook text-white"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter text-white">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-dribbble text-white">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-instagram text-white">
+                                                </i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t2.jpg') }}" alt="team2.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored1">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored3 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t3.jpg') }}" alt="team3.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored3">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored1 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t4.jpg') }}" alt="team4.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored1">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored2 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t5.jpg') }}" alt="team4.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored1">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored2 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t7.jpg') }}" alt="team4.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored1">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored2 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t8.jpg') }}" alt="team4.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored1">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored2 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-member">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/data/t9.jpg') }}" alt="team4.jpg')}}">
-                            </div>
-                            <div class="team-details text-center bg-theme-colored1">
-                                <div class="member-biography">
-                                    <h3 class="mt-0 text-white mb-0">Steve Smith</h3>
-                                    <p class="mb-0 text-white">English Teacher</p>
-                                </div>
-                                <ul class="styled-icons icon-dark icon-md icon-theme-colored2 icon-circled pt-3">
-                                    <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble text-white"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- Section: Pricing Table -->
-    <section class="pricing-table" data-tm-bg-color="#f7f7f7">
-        <div class="container pb-90">
-            <div class="section-title">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-6">
-                        <div class="tm-sc-section-title section-title text-center">
-                            <div class="title-wrapper">
-                                <h2 class="title">Pricing <span class="text-theme-colored3">Table</span></h2>
-                                <p>There are many variations of passages. But the majority have suffered alteration in
-                                    some form, by injected humour, or randomised words.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <div class="tm-sc-pricing-table p--0 mb-30" data-tm-border-radius="0">
-                            <div class="pricing-table-inner-wrapper">
-                                <div class="pricing-table-head bg-theme-colored3 p-20">
-                                    <div class="pricing-table-pricing">
-                                        <span class="pricing-table-price text-white"
-                                            data-tm-font-size="30px"><sup>$</sup>680</span>
-                                        <span
-                                            class="pricing-table-postfix float-end text-white mt-20 mt-lg-20">Per/Year</span>
-                                    </div>
-                                </div>
-                                <div class="pricing-table-thumb">
-                                    <img class="img-fullwidth" src="{{ asset('assets/images/pricing/1.jpg') }}"
-                                        alt="Image">
-                                </div>
-                                <div class="pricing-table-inner">
-                                    <div class="pricing-table-head pl-30 pt-30">
-                                        <div class="pricing-table-title-area pt-0 pb-0">
-                                            <h4 class="pricing-table-title">Basic</h4>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-table-content pl-30 pt-0 mt--0">
-                                        <ul>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Provide Written
-                                                Statements</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Assist in Case
-                                                Development</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Testify at a
-                                                Deposition and/or Trial</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Prepare
-                                                Demonstrative Evidence</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Obtain Other
-                                                Expert Witnesses</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-footer d-grid">
-                                        <a href="#" target="_self" class="btn btn-theme-colored4 btn-flat">
-                                            Signup </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="tm-sc-pricing-table p--0 mb-30" data-tm-border-radius="0">
-                            <div class="pricing-table-inner-wrapper">
-                                <div class="pricing-table-head bg-theme-colored1 p-20">
-                                    <div class="pricing-table-pricing">
-                                        <span class="pricing-table-price text-white"
-                                            data-tm-font-size="30px"><sup>$</sup>680</span>
-                                        <span
-                                            class="pricing-table-postfix float-end text-white mt-20 mt-lg-20">Per/Year</span>
-                                    </div>
-                                </div>
-                                <div class="pricing-table-thumb">
-                                    <img class="img-fullwidth" src="{{ asset('assets/images/pricing/2.jpg') }}"
-                                        alt="Image">
-                                </div>
-                                <div class="pricing-table-inner">
-                                    <div class="pricing-table-head pl-30 pt-30">
-                                        <div class="pricing-table-title-area pt-0 pb-0">
-                                            <h4 class="pricing-table-title">Standerd</h4>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-table-content pl-30 pt-0 mt--0">
-                                        <ul>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Provide Written
-                                                Statements</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Assist in Case
-                                                Development</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Testify at a
-                                                Deposition and/or Trial</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Prepare
-                                                Demonstrative Evidence</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Obtain Other
-                                                Expert Witnesses</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-footer d-grid">
-                                        <a href="#" target="_self" class="btn btn-theme-colored2 btn-flat">
-                                            Signup </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="tm-sc-pricing-table p--0 mb-30" data-tm-border-radius="0">
-                            <div class="pricing-table-inner-wrapper">
-                                <div class="pricing-table-head bg-theme-colored2 p-20">
-                                    <div class="pricing-table-pricing">
-                                        <span class="pricing-table-price text-white"
-                                            data-tm-font-size="30px"><sup>$</sup>680</span>
-                                        <span
-                                            class="pricing-table-postfix float-end text-white mt-20 mt-lg-20">Per/Year</span>
-                                    </div>
-                                </div>
-                                <div class="pricing-table-thumb">
-                                    <img class="img-fullwidth" src="{{ asset('assets/images/pricing/3.jpg') }}"
-                                        alt="Image">
-                                </div>
-                                <div class="pricing-table-inner">
-                                    <div class="pricing-table-head pl-30 pt-30">
-                                        <div class="pricing-table-title-area pt-0 pb-0">
-                                            <h4 class="pricing-table-title">Premium</h4>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-table-content pl-30 pt-0 mt--0">
-                                        <ul>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Provide Written
-                                                Statements</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Assist in Case
-                                                Development</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Testify at a
-                                                Deposition and/or Trial</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Prepare
-                                                Demonstrative Evidence</li>
-                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>Obtain Other
-                                                Expert Witnesses</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-footer d-grid">
-                                        <a href="#" target="_self" class="btn btn-theme-colored1 btn-flat">
-                                            Signup </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
-    <!-- Section: Testimonials -->
-    <section class="testimonials layer-overlay overlay-theme-colored4-7"
-        data-tm-bg-img="{{ asset('assets/images/bg/b1.jpg') }}">
-        <div class="container">
-            <div class="section-title">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-6">
-                        <div class="tm-sc-section-title section-title text-center">
-                            <div class="title-wrapper">
-                                <h2 class="title text-white">Happy Parent's Say</h2>
-                                <p data-tm-text-color="#fff">There are many variations of passages. But the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="owl-carousel owl-theme tm-owl-carousel-2col testimonial style2" data-autoplay="true"
-                            data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="10"
-                            data-stagepadding="0">
-                            <div class="tm-carousel-item">
-                                <div class="testimonial-wrapper">
-                                    <div class="content bg-theme-colored1 p-30 pb-40">
-                                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex
-                                            accusantium eaque itaque officiis et sit. Vero quo, impedit neque.</p>
-                                        <i class="fa fa-quote-right mt-10 text-white"></i>
-                                        <h4 class="author text-white mt-20 mb-0">Catherine Grace</h4>
-                                        <h6 class="title text-white mt-0 mb-15">Designer</h6>
-                                        <div class="thumb mt-20"><img class="rounded-circle" alt=""
-                                                src="{{ asset('assets/images/testimonials/1.jpg') }}"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tm-carousel-item">
-                                <div class="testimonial-wrapper">
-                                    <div class="content bg-theme-colored3 p-30 pb-40">
-                                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex
-                                            accusantium eaque itaque officiis et sit. Vero quo, impedit neque.</p>
-                                        <i class="fa fa-quote-right mt-10 text-white"></i>
-                                        <h4 class="author text-white mt-20 mb-0">Catherine Grace</h4>
-                                        <h6 class="title text-white mt-0 mb-15">Designer</h6>
-                                        <div class="thumb mt-20"><img class="rounded-circle" alt=""
-                                                src="{{ asset('assets/images/testimonials/3.jpg') }}"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tm-carousel-item">
-                                <div class="testimonial-wrapper">
-                                    <div class="content bg-theme-color-lemon p-30 pb-40">
-                                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex
-                                            accusantium eaque itaque officiis et sit. Vero quo, impedit neque.</p>
-                                        <i class="fa fa-quote-right mt-10 text-white"></i>
-                                        <h4 class="author text-white mt-20 mb-0">Catherine Grace</h4>
-                                        <h6 class="title text-white mt-0 mb-15">Designer</h6>
-                                        <div class="thumb mt-20"><img class="rounded-circle" alt=""
-                                                src="{{ asset('assets/images/testimonials/2.jpg') }}"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Section: Blog -->
     <section class="our-blog bg-img-cover bg-img-center" data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
@@ -1016,6 +1439,7 @@
             </div>
         </div>
     </section>
+
 @endsection
 @section('script')
 @endsection

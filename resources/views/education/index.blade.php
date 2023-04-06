@@ -331,49 +331,225 @@
 
 
     <section>
-        <div class="container" data-tm-padding-bottom="250px">
+        <div class="container"
+            style="background-image: url({{ asset('data/edbg.webp') }}); padding-top: 0px; padding-bottom: 0px">
             <div class="row">
-                <div class="col-lg-6 col-xl-5 m-lg-auto">
+                <div class="col-lg-4  col-md-4 m-lg-auto">
                     <div class="whychose-thumb">
-                        <img class="img-fullwidth" src="{{ asset('assets/images/photos/3.png') }}" alt="WhyChoseImage">
+                        <img class="img-fullwidth" src="{{ asset('data/t1.jpeg') }}" alt="WhyChoseImage">
                     </div>
                 </div>
-                <div class="col-xl-7 pl-50">
-                    <h2 class="title line-bottom mb-20 mt-0">Why <span class="text-theme-color-red">Choose Us</span> ?
+                <div class="col-lg-8 col-md-8 pl-50">
+                    <h2 class="title line-bottom mb-20 mt-0">
+                        <span class="text-theme-color-red" style="font-size: 20px;">
+                            @if (session('key') == 'jp')
+                                1. ネイティブの日本語のように話せるように、シャドーイングの練習をします！
+                            @else
+                                1. We provide shadowing practice to enable students to speak like a native Japanese!
+                            @endif
+                        </span>
                     </h2>
-                    <p class="mb-50">The Cweren Law Firm is a recognized leader in landlord tenant representation
-                        throughout Texas.The largests professional property management companies the region.The largest
-                        professional property management companies is a recognized leader in landlord tenant representation
-                        throughout Texas</p>
-                    <div class="row">
-                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="icon-box text-center">
-                                <a href="#"
-                                    class="icon bg-theme-colored3 icon-circled icon-border-effect effect-circle icon-md">
-                                    <i class="fas fa-bell text-white"></i>
-                                </a>
-                                <h5 class="icon-box-title mt-15 mb-0 letter-space-1 text-uppercase">Responsive</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                            <div class="icon-box text-center">
-                                <a href="#"
-                                    class="icon bg-theme-colored2 icon-circled icon-border-effect effect-circle icon-md">
-                                    <i class="fas fa-pencil-alt text-white"></i>
-                                </a>
-                                <h5 class="icon-box-title mt-15 mb-0 letter-space-1 text-uppercase">Validation</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <div class="icon-box text-center">
-                                <a href="#"
-                                    class="icon bg-theme-colored4 icon-circled icon-border-effect effect-circle icon-md">
-                                    <i class="fas fa-certificate text-white"></i>
-                                </a>
-                                <h5 class="icon-box-title mt-15 mb-0 letter-space-1 text-uppercase">Certification</h5>
+                    <p class="mb-50" style="text-align: justify; font-size: 15px;">
+                        @if (session('key') == 'jp')
+                            シャドーイングの練習では、短い会話を聞いてから、聞いたことを正確に話すことでシャドーイングを行います。それは、日本語を含む言語を学ぶための非常に有用な方法であることが証明されています.
+                            <br>
+
+                            多くの語学学習者は、リスニング、特にスピーキングに苦労しています。彼らは言いたいことを思いつくことはできますが、その場で文章を作ることはできません。シャドーイングにより、あなたの心は日本語で直感的に反応することができます。シャドーイングを定期的に練習することで、単に知っているだけでなく、学んだことを実際の状況に適用できるようになるのに役立ちます。
+                            <br>
+                            GA日本語研修センターのレッスンでは、あなたのレベルに合わせたシャドーイングの練習を提供しています。
+
+                            <br>
+                            話すことに自信が持てるようになると、日本語での会話も楽しくなります。シャドーイングの利点は、リスニングとスピーキングに加えて、リーディング
+                            スキルも向上することです。さらに、イントネーションや発音などの音声コンポーネントが頭に登録され、音声に反映されます。練習を続けることで、ネイティブの日本語のイントネーションと発音に近づきます。
+                        @else
+                            In shadowing practice, you listen to a short conversation and shadow after it by immediately
+                            speaking exactly what you hear. It has proven to be a very useful method for learning languages,
+                            including Japanese.
+                            <br>
+                            Many language learners struggle with listening and especially speaking. They are often able to
+                            think
+                            of what they want to say, but are not able to form a sentence on the spot. Shadowing enables
+                            your
+                            mind to respond intuitively in Japanese. Practicing shadowing regularly can help you to progress
+                            from merely knowing to applying what you have learnt in practical situations.
+
+                            <br>
+                            In GA Japanese & Kaigo Training Center's lessons, we provide shadowing practice suitable for
+                            your
+                            level.
+
+                            <br>
+                            As you gain confidence in speaking the language, you will also start to enjoy conversations in
+                            Japanese. What is more useful about shadowing is that, besides listening and speaking, your
+                            reading
+                            skills will also improve. In addition, speech components like intonation and pronunciation will
+                            register in your mind and they will be reflected in your speech. By continuing to practice, you
+                            will
+                            get closer to the intonation and pronunciation of a native Japanese.
+                        @endif
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-8 col-md-8 pl-50">
+                    <h2 class="title line-bottom mb-20 mt-0">
+                        <span class="text-theme-color-red" style="font-size: 20px;">
+                            @if (session('key') == 'jp')
+                                2. ありそうなシチュエーションを中心に役立つ表現を教えます！
+                            @else
+                                2. We teach useful expressions focusing on situations that you are likely to be in!
+                            @endif
+                        </span>
+                    </h2>
+                    <p class="mb-50" style="text-align: justify; font-size: 15px;">
+                        @if (session('key') == 'jp')
+                            もちろん、構造化された注意深い方法で文法を学ぶことは重要です。しかし、それだけでは文法的に正しい日本語や教科書的な日本語で話すことができるようになるだけでは十分ではないと考えています。
+                            GA日本語・外国人研修センターでは、教師が日常生活に関連した現実的な状況を提示します。
+                        @else
+                            It is of course important to learn grammar in a structured and careful way. However, we believe
+                            that is not enough to help our students to merely speak in grammatically correct or textbook
+                            Japanese. At GA Japanese & Kaigo Training Center, teachers will present them with realistic
+                            situations related to daily life.
+                            <br>
+                            Since the situations are familiar to you, you can immediately use the grammar and expressions
+                            you have learned to talk about topics about yourself, your family and friends.
+                            <br>
+                            By doing so, you will definitely gain confidence in speaking Japanese.
+                        @endif
+                    </p>
+                </div>
+
+                <div class="col-lg-4  col-md-4 m-lg-auto">
+                    <div class="whychose-thumb">
+                        <img class="img-fullwidth" src="{{ asset('data/t2.jpeg') }}" alt="WhyChoseImage">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4  col-md-4 m-lg-auto">
+                    <div class="whychose-thumb">
+                        <img class="img-fullwidth" src="{{ asset('data/t3.jpeg') }}" alt="WhyChoseImage">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 pl-50">
+                    <h2 class="title line-bottom mb-20 mt-0">
+                        <span class="text-theme-color-red" style="font-size: 20px;">
+                            @if (session('key') == 'jp')
+                                3. 授業では生徒の話す時間を優先します！
+                            @else
+                                3. We prioritise student speaking time in class!
+                            @endif
+                        </span>
+                    </h2>
+                    <p class="mb-50" style="text-align: justify; font-size: 15px;">
+                        @if (session('key') == 'jp')
+                            多くの人が知らないことですが、言語をマスターする方法は、それを上手に話せるようになることです。話す能力は、少なくとも日本語に関しては、コミュニケーションの基礎です。日本語が上手に話せれば、聞く、読む、書くといったその他のコミュニケーション能力も、自然と日本人並みのレベルにまで達します。
+                            <br>
+                            このため、各生徒がクラスで話す時間を多く提供しています。
+                            <br>
+                            教える部分はシンプルでわかりやすく、残りの時間は学んだことを実践することに専念します
+                        @else
+                            Unknown to many, the way to master a language is to be able to speak it well. The skill of
+                            speaking, at least for the Japanese language, is the basis of communication. If one can speak
+                            Japanese well, the other communication skills, namely listening, reading and writing, will come
+                            naturally to the level even comparable to that of a native Japanese.
+                            <br>
+                            For this reason, we provide each student a lot of time to speak in class.
+                            <br>
+                            The teaching portion is kept simple and easy to understand, and the remaining time is devoted to
+                            practicing what you have learnt.
+                        @endif
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-img-cover bg-img-center">
+        <div class="container pb-50">
+            <div class="section-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="tm-sc-section-title section-title text-center">
+                            <div class="title-wrapper">
+                                <h2 class="title">
+                                    Our
+                                    <span class="text-theme-colored3">Courses</span>
+                                </h2>
+                                <p>
+                                    @if (session('key') == 'jp')
+                                        私たちのレッスンには、文法、語彙、会話、ライティングの学習が含まれます。すべてのレベルを完了すると、日本語のように話したり、読み書きしたりできるようになるだけでなく、また、JLPTとして知られている日本語能力試験を受けるための設備も整っています。
+                                    @else
+                                        Our lessons include learning of Grammar, Vocabulary, Conversation and Writing. Upon
+                                        the
+                                        completion of every level, not only can you start to speak, read and write like a
+                                        Japanese; you will also be well-equipped to take the Japanese Language Proficiency
+                                        Test,
+                                        better known as JLPT.
+                                    @endif
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    @foreach ($course_schedules as $course_schedule)
+                        <div class="col-md-6 col-lg-6">
+                            <div class="course d-block d-xl-flex border-1px mb-30 row wow fadeInRight"
+                                data-wow-duration="1s" data-wow-delay="0.1s">
+                                <div class="col-xl-5">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="{{ $course_schedule->photo ?? '' }}"
+                                            alt=""
+                                            style="width: 100%; height: 260px; background-size: center; object-fit: cover;">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7">
+                                    <div class="course-details clearfix pt-15 pb-20">
+                                        <h4 class="mt-0 mb-0">
+                                            <a class="text-theme-colored1" href="#">
+                                                {{ $course_schedule->level ?? '' }}
+                                            </a>
+                                        </h4>
+                                        <h6 class="mb-0">
+                                            <span class="text-theme-colored1">
+                                                Class Time:
+                                            </span>
+                                            {{ $course_schedule->course_time ?? '' }}
+                                        </h6>
+                                        <p class="mb-15">
+                                            {{ $course_schedule->location ?? '' }}
+                                        </p>
+                                        <div class="course-details2-bottom">
+                                            <ul>
+                                                <li class="list-inline-item" style="font-size: 13px;">
+                                                    Capacity <br>
+                                                    {{ $course_schedule->capacity ?? '' }}
+                                                </li>
+                                                <li class="list-inline-item" style="font-size: 13px;">
+                                                    Duration <br>
+                                                    {{ $course_schedule->duration ?? '' }}
+                                                </li>
+                                                <li class="list-inline-item" style="font-size: 13px;">
+                                                    Days<br>
+                                                    {{ $course_schedule->course_day ?? '' }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>

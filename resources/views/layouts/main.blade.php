@@ -32,6 +32,13 @@
     <script src="{{ asset('assets/js/revolution-slider/js/revolution.tools.min.js') }}"></script>
     <script src="{{ asset('assets/js/revolution-slider/js/rs6.min.js') }}"></script>
     <script src="{{ asset('assets/js/revolution-slider/extra-rev-slider1.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/js/revolution-slider/extra-rev-slider-shop.css') }}">
+    <script src="{{ asset('assets/js/revolution-slider/extra-rev-slider-shop-boxed.js') }}"></script>
+    <link href="{{ asset('assets/js/timeline-horizontal-vertical/css/timeline-horizontal-vertical.css') }}"
+        rel="stylesheet" type="text/css">
+    <script src="{{ asset('assets/js/timeline-horizontal-vertical/js/timeline-horizontal-vertical.min.js') }}"></script>
+    <script src="{{ asset('assets/js/timeline-horizontal-vertical/js/custom.js') }}"></script>
 </head>
 
 <body class="tm-container-1230px has-side-panel side-panel-right">
