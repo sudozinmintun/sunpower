@@ -59,7 +59,8 @@
                             data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;"
                             data-start="700" data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap;">GA Japanese Training Center is a international leader in teaching
+                            style="z-index: 5; white-space: nowrap;">GA Japanese Training Center is a international
+                            leader in teaching
                             students to write effectively,<br> learn from each other and think for themselves.
                         </div>
                     </li>
@@ -117,8 +118,8 @@
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
                             data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="700" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap;">EduPoints is a international leader in teaching
-                            students to write effectively,<br> learn from each other and think for themselves.
+                            style="z-index: 5; white-space: nowrap;">
+                            Japan Training Center in Myanmar for Japanese learning, development human resources.
                         </div>
                         <!-- LAYER NR. 4 -->
                         <div class="tp-caption rs-parallaxlevel-0" id="slide-2-layer-4"
