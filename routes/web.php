@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EducationController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\NewsController;
@@ -13,6 +14,7 @@ Route::resource('contact', ContactController::class);
 Route::resource('news', NewsController::class);
 Route::resource('gallery', GalleryController::class);
 Route::resource('about', AboutController::class);
+Route::resource('education', EducationController::class);
 
 
 

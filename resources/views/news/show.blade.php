@@ -1,7 +1,7 @@
 @extends('layouts.main')
-@section('title', '- Contact Us')
+@section('title', '- News')
 @section('content')
-    <section class="inner-header divider parallax overlay-white-8" data-bg-img="{{ asset('data/10.jpg') }}">
+    <section class="page-title divider section-typo-light bg-img-center" data-tm-bg-img="{{ asset('data/10.jpg') }}">
         <div class="container pt-200 pb-200">
             <div class="section-content">
                 <div class="row">
@@ -10,9 +10,12 @@
                             @if (session('key') == 'jp')
                                 新着情報
                             @else
-                                What's New
+                                Update Information
                             @endif
                         </h2>
+                        <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                            <br><br>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -41,13 +44,14 @@
                                                     {{ $new->title_eng ?? '' }}
                                                 @endif
                                             </h3>
+
                                             <span class="mb-10 text-gray-darkgray mr-10 font-13">
-                                                <i class="fa fa-clock-o mr-5 text-theme-colored"></i>
+                                                <i class="fa fa-calendar text-black" data-tm-margin-right="8px"></i>
                                                 {{ $new->upload_date ?? '' }}
                                             </span>
 
                                             <span class="mb-10 text-gray-darkgray mr-10 font-13">
-                                                <i class="fa fa-heart-o mr-5 text-theme-colored"></i>
+                                                <i class="far fa-eye text-black" data-tm-margin-right="8px"></i>
                                                 {{ $new->view ?? 0 }}
                                                 @if ($new->view == 1)
                                                     View
@@ -65,17 +69,22 @@
                                         {!! $new->description_eng ?? '' !!}
                                     @endif
                                 </p>
-                                <div class="mt-30 mb-0">
-                                    <h5 class="pull-left flip mt-10 mr-20 text-theme-colored">Share:</h5>
+
+                                <div class="mt-5 mb-0">
+                                    <h5 class="float-start flip mt-0 mr-3 text-theme-colored1">Share:</h5>
                                     <ul class="styled-icons icon-circled m-0">
                                         <li>
-                                            <a href="#" data-bg-color="#3A5795">
-                                                <i class="fa fa-facebook text-white"></i>
+                                            <a href="#" data-tm-bg-color="#3A5795">
+                                                <i class="fab fa-facebook text-white"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" data-bg-color="#55ACEE">
-                                                <i class="fa fa-twitter text-white"></i>
+                                            <a href="#" data-tm-bg-color="#55ACEE">
+                                                <i class="fab fa-twitter text-white"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tm-bg-color="#A11312">
+                                                <i class="fab fa-google-plus text-white"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -87,7 +96,6 @@
 
                 <div class="col-md-3">
                     @include('layouts.quick_link')
-
                     <div class="widget">
                         <h5 class="widget-title line-bottom">
                             @if (session('key') == 'jp')
@@ -98,10 +106,11 @@
                         </h5>
                         <div class="latest-posts">
                             @foreach ($news as $new)
-                                <article class="post media-post clearfix pb-0 mb-10">
+                                <article class="post media-post clearfix"
+                                    style="background-image: linear-gradient(to right, #D4A231 , #e4dcca); padding: 10px;">
                                     <a class="post-thumb" href="{{ route('news.show', $new->id) }}">
                                         <img src="{{ $new->photo }}" alt=""
-                                            style="width: 70px; height: 90px; background-size: center; object-fit: cover;">
+                                            style="width: 80px; height: 80px; background-size: center; object-fit: cover;">
                                     </a>
                                     <div class="post-right">
                                         <h5 class="post-title mt-0">
@@ -129,7 +138,6 @@
             </div>
         </div>
     </section>
-
 @endsection
 @section('script')
 @endsection

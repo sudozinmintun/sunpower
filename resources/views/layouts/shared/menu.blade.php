@@ -143,7 +143,7 @@
                                     </li>
 
                                     <li class="menu-item">
-                                        <a href="{{ route('home') }}">
+                                        <a href="{{ route('education.index') }}">
                                             @if (session('key') == 'jp')
                                                 教育
                                             @else
