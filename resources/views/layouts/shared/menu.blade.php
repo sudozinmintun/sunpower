@@ -1,201 +1,252 @@
-<header id="header" class="header modern-header modern-header-theme-colored2">
-    <div class="header-top  sm-text-center" style="background-color: #D29F2A;">
+<header id="header" class="header header-layout-type-header-3rows header-nav-left">
+    <div class="header-top" style="background-image: linear-gradient(to right, #cc9900, #ffdf00, #eead0e);">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="widget text-white">
-                        <ul class="list-inline text-left flip sm-text-center">
+                <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
+                    <ul class="element contact-info">
+                        <li class="contact-phone">
+                            <i class="fa fa-phone font-icon sm-display-block"></i>
+                            Tel: 09 269 101 211
+                        </li>
+                        <li class="contact-email">
+                            <i class="fa fa-envelope font-icon sm-display-block"></i>
+                            info@sunpowerdragon-mm.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
+                    <div class="element pt-0 pb-0">
+                        <ul class="styled-icons icon-dark icon-theme-colored1 icon-circled clearfix">
                             <li>
-                                <a class="text-white" href="#">
-                                    Facebook
+                                <a href="{{ route('en') }}">
+                                    <img src="{{ asset('data/eng.png') }}" style="width: 50px;">
                                 </a>
                             </li>
 
-                            <li class="text-white">|</li>
-
                             <li>
-                                <a class="text-white" href="#">
-                                    Twitter
+                                <a href="{{ route('jp') }}">
+                                    <img src="{{ asset('data/jp.png') }}" style="width: 50px;">
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                    <div class="element pt-0 pt-lg-10 pb-0">
+                        <a href="{{ route('about.index') }}" class="btn btn-theme-colored2 btn-sm">
+                            @if (session('key') == 'jp')
+                                会社情報
+                            @else
+                                Profile
+                            @endif
+                        </a>
 
-                <div class="col-md-6">
-                    <center>
-                        <div class="widget text-white">
-                            <ul class="list-inline xs-text-center text-white">
-                                <li class="m-0 pl-10 pr-10">
-                                    <a href="tel:09 269 101 211" class="text-white">
-                                        <i class="fa fa-phone text-white"></i>
-                                        09 269 101 211
+                        <a href="{{ route('contact.index') }}" class="btn btn-theme-colored2 btn-sm">
+                            @if (session('key') == 'jp')
+                                お問い合わせ
+                            @else
+                                Inquiry
+                            @endif
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-start">
+                    <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
+                        <img class="logo-default logo-1x" src="{{ asset('assets/images/logo-wide.png') }}"
+                            alt="Logo">
+                        <img class="logo-default logo-2x retina" src="{{ asset('assets/images/logo-wide%402x.png') }}"
+                            alt="Logo">
+                    </a>
+                </div>
+                <div class="col-xl-auto align-self-center ms-xl-auto header-mid-right text-center text-xl-end">
+                    <div class="header-mid-column3-container">
+                        <div class="row justify-content-sm-center">
+                            <div class="col-sm-auto element text-center text-md-start">
+                                <div class="contact-info-box big-icon">
+                                    <div class="left-thumb">
+                                        <a href="tel:(123)456-78-90">
+                                            <i class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="title">Call us at</h5>
+                                        <div class="subtitle"><a href="tel:(123)456-78-90">(+959) 445652455</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-auto element text-center text-md-start">
+                                <div class="contact-info-box big-icon">
+                                    <div class="left-thumb">
+                                        <a href="mailto:info@example.com">
+                                            <i class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="title">Email us</h5>
+                                        <div class="subtitle">
+                                            <a href="mailto:info@example.com">
+                                                info@heiwamm.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-auto element text-center text-md-start">
+                                <div class="contact-info-box big-icon">
+                                    <div class="left-thumb">
+                                        <a href="#">
+                                            <i class="flaticon-contact-025-world font-icon  sm-display-block"></i>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="title">
+                                            Location
+                                        </h5>
+                                        <div class="subtitle">
+                                            North Dagon Tsp, Yangon.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav tm-enable-navbar-hide-on-scroll">
+        <div class="header-nav-wrapper navbar-scrolltofixed">
+            <div class="menuzord-container header-nav-container">
+                <div class="container position-relative">
+                    <div class="row header-nav-col-row">
+                        <div class="col-sm-auto align-self-center">
+                            <nav id="top-primary-nav" class="menuzord theme-color2" data-effect="fade"
+                                data-animation="none" data-align="right">
+                                <ul id="main-nav" class="menuzord-menu">
+
+
+                                    <li class="menu-item">
+                                        <a href="{{ route('home') }}">
+                                            @if (session('key') == 'jp')
+                                                ミャンマ—
+                                            @else
+                                                Myanmar
+                                            @endif
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{{ route('home') }}">
+                                            @if (session('key') == 'jp')
+                                                教育
+                                            @else
+                                                Education
+                                            @endif
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="#">
+                                            Trainee
+                                        </a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="{{ route('home') }}">
+                                                    @if (session('key') == 'jp')
+                                                        技能実習生
+                                                    @else
+                                                        Technical Intern Trainee
+                                                    @endif
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="{{ route('home') }}">
+                                                    @if (session('key') == 'jp')
+                                                        特定技能実習生
+                                                    @else
+                                                        Specified Skilled Trainee
+                                                    @endif
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{{ route('gallery.index') }}">
+                                            @if (session('key') == 'jp')
+                                                Gallery
+                                            @else
+                                                Gallery
+                                            @endif
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{{ route('news.index') }}">
+                                            @if (session('key') == 'jp')
+                                                新着情報
+                                            @else
+                                                Update Information
+                                            @endif
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{{ route('home') }}">
+                                            @if (session('key') == 'jp')
+                                                視察と入国ビザ
+                                            @else
+                                                Sightseen and Entry visa services
+                                            @endif
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div
+                            class="col-sm-auto ms-auto align-self-center element text-center text-md-start d-none d-xl-block border-left-3px">
+                            <ul class="styled-icons icon-gray icon-theme-colored1 icon-md icon-circled clearfix pl-30">
+                                <li>
+                                    <a class="social-link" href="https://www.facebook.com/GATrainingSchool/"
+                                        target="_blank" style="background-color: #268BF1;">
+                                        <i class="fab fa-facebook text-white"></i>
                                     </a>
                                 </li>
-                                <li class="m-0 pl-10 pr-10">
-                                    <a href="mailto:info@sunpowerdragon-mm.com" class="text-white">
-                                        <i class="fa fa-envelope-o text-white mr-5"></i>
-                                        info@sunpowerdragon-mm.com
+
+                                <li>
+                                    <a class="social-link" href="#" style="background-color: #3396E8;">
+                                        <i class="fab fa-twitter text-white"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="social-link" href="#" style="background-color: #E93F33;">
+                                        <i class="fab fa-youtube text-white"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                    </center>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="widget text-white">
-                        <ul class="list-inline xs-text-center text-white pull-right">
-                            <li>
-                                <a href="{{ route('en') }}" class="nav-link">
-                                    <img src="{{ asset('data/eng.png') }}" style="width: 40px;">
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="{{ route('jp') }}" class="nav-link">
-                                    <img src="{{ asset('data/jp.png') }}" style="width: 40px;">
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="header-middle p-0 bg-lightest xs-text-center pb-30">
-        <div class="container pt-20 pb-20">
-            <div class="row">
-
-                <div class="col-xs-12 col-sm-12 col-md-3">
-                    <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="index-mp-layout1.html">
-                        <img src="https://allaccessmyanmar.com/wordpress/wp-content/themes/amm/assets/img/common/logo.png"
-                            alt="">
-                    </a>
+                <div class="row d-block d-xl-none">
+                    <div class="col-12">
+                        <nav id="top-primary-nav-clone"
+                            class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive"
+                            data-effect="slide" data-animation="none" data-align="right">
+                            <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-9">
-                    <ul class="list-inline pull-right flip sm-pull-none sm-text-center list-bordered">
-                        <style>
-                            .my-menu-btn {
-                                height: 40px;
-                                line-height: 40px;
-                                padding: 0 20px;
-                                border-radius: 5px 5px 5px 5px;
-                            }
-                        </style>
-                        <li class="bg-theme-colored text-white my-menu-btn" style="background: #4e4633 !important;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="{{ route('about.index') }}" style="color: white;">
-                                @if (session('key') == 'jp')
-                                    会社情報
-                                @else
-                                    Profile
-                                @endif
-                            </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                        </li>
-
-                        <li class="bg-theme-colored3 text-white my-menu-btn"
-                            style="background-color: #D29F2A !important;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="{{ route('contact.index') }}" style=" color: white;">
-                                @if (session('key') == 'jp')
-                                    お問い合わせ
-                                @else
-                                    Inquiry
-                                @endif
-                            </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-nav">
-        <div class="header-nav-wrapper navbar-scrolltofixed" style="background-color: #D29F2A;">
-            <div class="container">
-                <nav id="menuzord" class="menuzord  no-bg">
-
-                    <ul class="menuzord-menu">
-
-                        <li class="" style="padding: 0px;">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    ミャンマ—
-                                @else
-                                    Myanmar
-                                @endif
-                            </a>
-                        </li>
-
-                        <li class="">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    教育
-                                @else
-                                    Education
-                                @endif
-                            </a>
-                        </li>
-
-
-                        <li class="">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    技能実習生
-                                @else
-                                    Technical Intern Trainee
-                                @endif
-                            </a>
-                        </li>
-
-                        <li class="">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    特定技能実習生
-                                @else
-                                    Specified Skilled Trainee
-                                @endif
-                            </a>
-                        </li>
-
-
-                        <li class="">
-                            <a href="{{ route('gallery.index') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    Gallery
-                                @else
-                                    Gallery
-                                @endif
-                            </a>
-                        </li>
-
-                        <li class="">
-                            <a href="{{ route('news.index') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    新着情報
-                                @else
-                                    Update Information
-                                @endif
-                            </a>
-                        </li>
-
-                        <li class="">
-                            <a href="{{ route('home') }}" style="font-weight: bold">
-                                @if (session('key') == 'jp')
-                                    視察と入国ビザ
-                                @else
-                                    Sightseen and Entry visa services
-                                @endif
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
             </div>
         </div>
     </div>

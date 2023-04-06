@@ -3,9 +3,6 @@ Rounded Boxed Skin
 */
 
 /* Menu items */
-.menuzord-menu > li{
-	padding: 18px 0;
-}
 .menuzord-menu > li > a{
 	padding: 8px 16px;
 	border-radius: 30px;
@@ -18,23 +15,10 @@ Rounded Boxed Skin
 	color: #fff;
 }
 
-/* Dropdown */
-.menuzord-menu ul.dropdown{
-	top: 71px;
-}
-.menuzord-menu ul.dropdown li ul.dropdown{
-    top: 0;
-}
-
 /* Dropdown items */
 .menuzord .menuzord-menu ul.dropdown li:hover > a{
 	background: #333;
 	color: #fff;
-}
-
-/* Megamenu */
-.menuzord-menu > li > .megamenu{
-	top: 71px;
 }
 
 /* Search field */
@@ -92,9 +76,46 @@ Rounded Boxed Skin
 	background: #EC87C0;
 	color: #fff;
 }
+/* theme-color1 */
+.menuzord.theme-color1 .menuzord-menu > li.active > a, 
+.menuzord.theme-color1 .menuzord-menu > li:hover > a, 
+.menuzord.theme-color1 .menuzord-menu ul.dropdown li:hover > a{ 
+	background: var(--theme-color1);
+	color: #fff;
+}
+/* theme-color2 */
+.menuzord.theme-color2 .menuzord-menu > li.active > a, 
+.menuzord.theme-color2 .menuzord-menu > li:hover > a, 
+.menuzord.theme-color2 .menuzord-menu ul.dropdown li:hover > a{ 
+	background: var(--theme-color2);
+	color: #fff;
+}
+/* theme-color3 */
+.menuzord.theme-color3 .menuzord-menu > li.active > a, 
+.menuzord.theme-color3 .menuzord-menu > li:hover > a, 
+.menuzord.theme-color3 .menuzord-menu ul.dropdown li:hover > a{ 
+	background: var(--theme-color3);
+	color: #fff;
+}
+/* theme-color4 */
+.menuzord.theme-color4 .menuzord-menu > li.active > a, 
+.menuzord.theme-color4 .menuzord-menu > li:hover > a, 
+.menuzord.theme-color4 .menuzord-menu ul.dropdown li:hover > a{ 
+	background: var(--theme-color4);
+	color: #fff;
+}
+
+@media (min-width: 1200px){
+	header#header.header-layout-type-header-2rows-floating-header .menuzord-menu > li {
+		padding: 20px 0;
+	}
+	header#header.header-layout-type-header-2rows-floating-header .menuzord-menu ul.dropdown {
+		top: 100%;
+	}
+}
 
 /* Mobile mode (Responsive mode) */
-@media (max-width: 900px){
+@media (max-width: 1199.98px){
 	/* Menu items */
 	.menuzord-responsive .menuzord-menu > li{
 		padding: 0;

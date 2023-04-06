@@ -1,248 +1,228 @@
 /* --------------------------------------
-@Author: ThemeMascot
-@URL: http://themeforest.net/user/ThemeMascot
+$Author: ThemeMascot
+$URL: https://themeforest.net/user/ThemeMascot
 ----------------------------------------- */
 /*
- * Dark.less
+ * Dark.scss
  * -----------------------------------------------
 */
-.dark {
+body.dark-layout {
+  background-color: #1e1e1e !important;
+  color: #999999;
+}
+
+.dark-layout {
   /*Bacground Color*/
   /*Bacground Transparent Color*/
   /*Text Color*/
   /*Layer Overlay*/
   /*Custom Theme Styles*/
-  /* toggle accordion */
-  /*Blog Style*/
   /* boxed-layout */
-  /* Feature Icon-box */
-  /* Opening Hourse */
 }
-body.dark {
-  background-color: #1e1e1e !important;
+.dark-layout h1,
+.dark-layout h2,
+.dark-layout h3,
+.dark-layout h4,
+.dark-layout h5,
+.dark-layout h6,
+.dark-layout .h1,
+.dark-layout .h2,
+.dark-layout .h3,
+.dark-layout .h4,
+.dark-layout .h5,
+.dark-layout .h6 {
+  color: white;
 }
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6,
-.dark .h1,
-.dark .h2,
-.dark .h3,
-.dark .h4,
-.dark .h5,
-.dark .h6 {
-  color: #909090;
+.dark-layout h1 a,
+.dark-layout h2 a,
+.dark-layout h3 a,
+.dark-layout h4 a,
+.dark-layout h5 a,
+.dark-layout h6 a,
+.dark-layout .h1 a,
+.dark-layout .h2 a,
+.dark-layout .h3 a,
+.dark-layout .h4 a,
+.dark-layout .h5 a,
+.dark-layout .h6 a {
+  color: white;
 }
-.dark h1 a,
-.dark h2 a,
-.dark h3 a,
-.dark h4 a,
-.dark h5 a,
-.dark h6 a,
-.dark .h1 a,
-.dark .h2 a,
-.dark .h3 a,
-.dark .h4 a,
-.dark .h5 a,
-.dark .h6 a {
-  color: #909090;
+.dark-layout .header#header .header-top .element,
+.dark-layout .header#header .header-top .element a {
+  color: #cccccc !important;
 }
-.dark .divider-dark {
+.dark-layout .header-layout-type-header-2rows .header-nav-container {
   background-color: #252525 !important;
 }
-.dark .bg-deep {
-  background-color: #191919 !important;
+.dark-layout .menuzord-menu > li > a {
+  color: #999999;
 }
-.dark .bg-light {
+.dark-layout .divider-dark {
+  background-color: #252525 !important;
+}
+.dark-layout .bg-deep {
+  background-color: #1a1a1a !important;
+}
+.dark-layout .bg-light {
   background-color: #202020 !important;
 }
-.dark .bg-lighter {
+.dark-layout .bg-lighter {
   background-color: #262626 !important;
 }
-.dark .bg-lightest {
+.dark-layout .bg-lightest {
   background-color: #333333 !important;
 }
-.dark .bg-white-light {
-  background-color: #333333 !important;
+.dark-layout .bg-white-light {
+  background-color: #333 !important;
 }
-.dark .bg-deep-transparent {
+.dark-layout .bg-deep-transparent {
   background-color: rgba(0, 0, 0, 0.9);
 }
-.dark .bg-light-transparent {
+.dark-layout .bg-light-transparent {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.dark .bg-lighter-transparent {
+.dark-layout .bg-lighter-transparent {
   background-color: rgba(0, 0, 0, 0.7);
 }
-.dark .bg-lightest-transparent {
+.dark-layout .bg-lightest-transparent {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.dark .bg-very-lightest-transparent {
+.dark-layout .bg-very-lightest-transparent {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.dark .text-black-333 {
-  color: #909090 !important;
+.dark-layout .text-black-333 {
+  color: white !important;
 }
-.dark .text-white-light {
+.dark-layout .text-white-light {
   color: #4d4d4d !important;
 }
-.dark .layer-overlay.overlay-light::before {
+.dark-layout .layer-overlay.overlay-light::before {
   background-color: rgba(33, 33, 33, 0.8);
 }
-.dark .layer-overlay.overlay-lighter::before {
+.dark-layout .layer-overlay.overlay-lighter::before {
   background-color: rgba(33, 33, 33, 0.7);
 }
-.dark .layer-overlay.overlay-deep::before {
+.dark-layout .layer-overlay.overlay-deep::before {
   background-color: rgba(33, 33, 33, 0.9);
 }
-.dark hr {
-  border-color: #333333;
+.dark-layout .tm-sc-blog article .entry-content {
+  background-color: #262626;
 }
-.dark .border-1px {
-  border: 1px solid #333333;
+.dark-layout hr {
+  border-color: #333;
 }
-.dark .border-10px,
-.dark .blog-posts .post.style1 {
-  border-color: #191919 !important;
+.dark-layout .border-1px {
+  border: 1px solid #333;
 }
-.dark .border-1px {
-  border-color: #333333 !important;
+.dark-layout .border-10px,
+.dark-layout .blog-posts .post.style1 {
+  border-color: #1a1a1a !important;
 }
-.dark .border-2px {
-  border-color: #333333 !important;
+.dark-layout .border-1px {
+  border-color: #333 !important;
 }
-.dark .border-3px,
-.dark .title-border {
-  border-color: #333333 !important;
+.dark-layout .border-2px {
+  border-color: #333 !important;
 }
-.dark .border-4px {
-  border-color: #333333 !important;
+.dark-layout .border-3px,
+.dark-layout .title-border {
+  border-color: #333 !important;
 }
-.dark .border-5px {
-  border-color: #333333 !important;
+.dark-layout .border-4px {
+  border-color: #333 !important;
 }
-.dark .event {
-  border-color: #333333 !important;
+.dark-layout .border-5px {
+  border-color: #333 !important;
 }
-.dark .team-carousel-1col .team-thum {
-  border-color: #191919 !important;
+.dark-layout .event {
+  border-color: #333 !important;
 }
-.dark .pricing-table.style1 .pricing-icon i {
-  border-color: #191919 !important;
-}
-.dark .service-icon-box a {
-  background-color: rgba(33, 33, 33, 0.6) !important;
-}
-.dark .owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-prev,
-.dark .owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-next {
+.dark-layout .owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-prev,
+.dark-layout .owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-next {
   background: #404040 !important;
 }
-.dark .bx-controls .bx-controls-direction > a {
+.dark-layout .bx-controls .bx-controls-direction > a {
   background: #404040 !important;
 }
-.dark .funfact.bg-white {
-  background: #262626 !important;
-}
-.dark .funfact.style-1:hover .funfact-title {
-  color: #555555 !important;
-}
-.dark .separator::before,
-.dark .separator::after {
-  border-bottom: 1px solid #333333;
-}
-.dark .register-form .form-control {
+.dark-layout .form-control {
   background: rgba(0, 0, 0, 0.2);
-  border-color: #333333;
+  border-color: #333;
+  color: #ccc;
 }
-.dark .login-form {
-  border: 1px solid #333333;
-}
-.dark .form-control {
+.dark-layout .login-form .form-control,
+.dark-layout .register-form .form-control {
   background: rgba(0, 0, 0, 0.2);
-  border-color: #333333;
+  border-color: #555;
 }
-.dark .login-form .form-control,
-.dark .register-form .form-control {
-  background: rgba(0, 0, 0, 0.2);
-  border-color: #555555;
+.dark-layout .login-form.login-form-transparent {
+  background-color: #222;
 }
-.dark .login-form.login-form-transparent {
-  background-color: #222222;
+.dark-layout .tab-content {
+  border: 1px solid #333;
 }
-.dark .tab-content {
-  border: 1px solid #333333;
+.dark-layout .header-nav .header-nav-wrapper.scroll-to-fixed-fixed.scroll-to-fixed-fixed {
+  border-bottom-color: #444;
 }
-.dark .services-tab .nav-tabs,
-.dark .services-tab .nav-tabs > li {
-  border-color: #191919 !important;
-}
-.dark .services-tab .nav-tabs > li > a {
-  background-color: #4d4d4d !important;
-}
-.dark .header-nav .header-nav-wrapper.scroll-to-fixed-fixed.scroll-to-fixed-fixed {
-  border-bottom-color: #404040;
-}
-.dark .nav-tabs > li > a:hover,
-.dark .nav-tabs > li > a:focus {
+.dark-layout .nav-tabs > li > a:hover,
+.dark-layout .nav-tabs > li > a:focus {
   color: #808080;
 }
-.dark .nav-tabs > li > a:hover,
-.dark .nav-tabs > li.active a {
-  border-color: #333333;
+.dark-layout .nav-tabs > li > a:hover,
+.dark-layout .nav-tabs > li.active a {
+  border-color: #333;
 }
-.dark .nav-sidebar li {
+.dark-layout .nav-sidebar li {
   background-color: #242424 !important;
 }
-.dark .panel-group .panel {
-  background-color: #262626 !important;
-}
-.dark .panel-group .panel .panel-title a {
-  background-color: rgba(33, 33, 33, 0.5) !important;
-}
-.dark .panel-group .panel .panel-title a:hover {
-  color: #f5f5f5 !important;
-}
-.dark .panel-group .panel .panel-title a.active {
-  background-color: rgba(28, 28, 28, 0.8) !important;
-  border-bottom-color: rgba(23, 23, 23, 0.8) !important;
-  color: #f5f5f5 !important;
-}
-.dark .panel-group .panel .panel-title a.active:after {
-  background-color: #333333 !important;
-}
-.dark .panel-group .panel .panel-content {
-  background-color: rgba(28, 28, 28, 0.8) !important;
-}
-.dark .panel-group.transparent .panel {
-  background-color: transparent !important;
-}
-.dark .panel-group.transparent .panel .panel-title a {
-  background-color: transparent !important;
-}
-.dark .panel-group.transparent .panel .panel-title a.active {
-  background-color: transparent!important;
-  border-bottom-color: transparent !important;
-}
-.dark .panel-group.transparent .panel .panel-title a.active:after {
-  background-color: transparent !important;
-}
-.dark .blog-posts .post {
-  background-color: #282828 !important;
-}
-.dark .fc-day-number {
-  color: #909090;
-}
-.dark .header-nav .header-nav-wrapper .menuzord {
+.dark-layout .header-nav .header-nav-wrapper .menuzord {
   background: transparent;
 }
-.dark.boxed-layout section {
+.dark-layout.tm-boxed-layout section {
   background: #202020;
 }
-.dark .feature-icon-box {
-  border: 1px solid #333333;
+.dark-layout .border-bottom {
+  border-bottom: 1px solid #555 !important;
 }
-.dark .opening-hours ul li {
-  border-bottom: 1px solid #333333;
+
+/*
+ * shop.scss
+ * -----------------------------------------------
+*/
+.dark-layout .service-item-current-style1 {
+  background-color: #262626 !important;
 }
+.dark-layout .service-item-current-style1 .service-content {
+  background-color: #262626 !important;
+}
+.dark-layout .about-box .help-details {
+  background-color: #262626 !important;
+}
+.dark-layout .icon-box .icon.icon-gray {
+  background-color: #262626 !important;
+}
+.dark-layout .tm-sc-team-box .tm-content {
+  background-color: #262626 !important;
+}
+.dark-layout .tm-sc-testimonials.testimonials-style-current-theme .testimonial-text-holder {
+  background-color: #333333 !important;
+}
+.dark-layout .booking-form {
+  background-color: #333333 !important;
+}
+.dark-layout .company-service:before {
+  background-color: #202020 !important;
+}
+.dark-layout .border-top {
+  border-top: 1px solid #333333 !important;
+}
+.dark-layout .blog-style1-current-theme .post {
+  background-color: #333333 !important;
+}
+.dark-layout .course {
+  background-color: #333333 !important;
+}
+.dark-layout .tm-sc-departments-tab {
+  background: #333333 !important;
+}
+
+/*# sourceMappingURL=style-main-dark.css.map */
