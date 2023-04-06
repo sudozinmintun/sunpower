@@ -134,9 +134,8 @@
                                     <div class="tm-sc-section-title section-title text-center">
                                         <div class="title-wrapper">
                                             <h2 class="title" style="font-size: 40px;">
-                                                Educational
                                                 <span class="text-theme-colored1">
-                                                    System
+                                                    Education
                                                 </span>
                                             </h2>
                                             <p
@@ -150,22 +149,34 @@
                             </div>
                             <p style="text-align: justify; font-size: 17px; font-wiehgt: 400px; color: black">
                                 @if (session('key') == 'jp')
-                                    GA日本語研修センターは、ミャンマーの勤勉で優秀な人材を通じて日本との交流を深め、国際社会に貢献していきます。 <br>
-                                    ミャンマーの才能と志を持つ若い男女の夢と希望を叶えるため、「あなたの夢を全力でサポートします」を基本理念に、優秀で元気な人材をミャンマーで募集しています。 GA
-                                    Japanese & Kaigo Training Center
-                                    は、皆様のご要望にお応えすることで、日本とミャンマーに優しい国際的なビジネス環境を推進できることを誇りに思っています。 <br>
-                                    これもひとえに日本、ミャンマー双方の企業、監理団体をはじめとする関係者の皆様のご支援の賜物であり、心より感謝申し上げます。
-                                @else
-                                    GA Japanese & Kaigo Training Center will contribute to the international community by
-                                    deepening exchanges with Japan through Myanmar's diligent and excellent human resources.
+                                    GA Japanese & Kaigo Training Center
+                                    は、ミャンマーで最も興味深く効果的な日本語レッスンをお届けすることをお約束します。そして、言語だけを知っていてJLPTに合格すれば十分だと思う場合は、それを再考してもらいます.言葉だけでなく、日本の文化なども学べたら素敵ですよね?
+
                                     <br>
-                                    In order to fulfill the dreams and aspirations of Myanmar's talented and ambitious young
-                                    men and women, based on the basic philosophy of "I will do my best to support your
-                                    dreams", we are recruiting excellent and energetic human resources in Myanmar. We are
-                                    proud that the GA Japanese & Kaigo Training Center can promote the Japan-Myanmar
-                                    friendly international business environment by responding to your requests. <br>
-                                    This is all thanks to the support of the parties concerned, including companies and
-                                    supervising organizations in both Japan and Myanmar, and I am sincerely grateful.
+                                    私たちのレッスンは、日本語能力試験（JLPTとして知られ、多くの日本人学習者が達成を目指している）に合格することを学ぶだけでなく、言語の総合的なマスターになるように設計されています.
+                                    JLPT に合格するということは、多くの JLPT N1 保持者でさえ不足している 2
+                                    つの重要なスキルである、読み書きは十分にできるが、流暢に話すことはできないことを意味します。
+                                    <br>
+
+                                    GA 日本語 &
+                                    研修センターでは、日本語を流暢に話し、読み、書き、聞くことができるようになります。日本語学校を超えて、社会、芸術、歴史などの日本の文化を紹介し、実用的なアプリケーションを紹介するので、日本で働くのに十分な知識を得ることができます.
+                                @else
+                                    GA Japanese & Kaigo Training Center promises to deliver the most interesting and
+                                    effective Japanese lessons in Myanmar. And if you think you it is sufficient to know
+                                    only the language and pass JLPT, we will have you reconsider that. Wouldn’t it be
+                                    wonderful if, besides the language, you can also learn about the Japanese culture and
+                                    beyond? <br>
+
+                                    Our lessons are designed in a way that you not only learn to pass the Japanese Language
+                                    Proficiency Test, better known as JLPT and which many Japanese learners aim to
+                                    accomplish, but also be an all-rounded master of the language. The passing of JLPT means
+                                    that you can read and listen well, but not write and speak fluently, two important
+                                    skills which even many JLPT N1 holders lack. <br>
+
+                                    GA Japanese & Kaigo Training Center ensures that you can speak, read, write and listen
+                                    to Japanese fluently. Beyond a Japanese language school, the lessons will introduce you
+                                    to the culture of Japan including the society, arts and history, introduce practical
+                                    applications, so that you know enough to even work in Japan.
                                 @endif
                             </p>
                         </div>
@@ -175,7 +186,199 @@
         </div>
     </section>
 
-    
+
+    <section class="about-section pt-10 pb-10 " data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
+        <div class="position-relative">
+            <div class="container-fulid">
+                <div class="section-content">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-lg-12 col-xl-4 order-1 order-xl-0">
+                            <div class="about-style-current-theme">
+                                <div class="tm-sc-animated-layer-images">
+                                    <div class="layer-image-wrapper">
+                                        <div class="layer-image">
+                                            <img class="w-100" src="{{ asset('data/tm1.jpg') }}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-12 col-xl-8 order-0 order-xl-1">
+                            <div class="about-style-current-theme">
+                                <div class="tm-sc-about-content about-content">
+                                    <div class="tm-sc-section-title section-title mb-0">
+                                        <div class="title-wrapper mb-0">
+                                            <p class="subtitle line-bottom">
+                                                GA Japanese & Kaigo Training Center
+                                            </p>
+                                            <h2 class="title">
+                                                Unique Teaching Method
+                                            </h2>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="paragraph">
+                                                        <p style="text-align: justify; font-size: 16px;">
+                                                            @if (session('key') == 'jp')
+                                                                GA日本語・外国人研修センター独自の指導法は、他の3つよりも話すことを重視しています。このユニークな教授法は、進歩を制限する伝統的な教授法を使用するミャンマーの他の多くの日本語学校では利用できません。
+                                                                <br>
+
+                                                                その上、GA 日本語 & 外国語トレーニング
+                                                                センターは、高品質で有用な現代語の教科書を日本で定期的に調達し、最高の教材をまとめて、学生が言語をより速く、高いレベルの習熟度で習得できるようにします。
+                                                                <br>
+                                                                何よりも、GA Japanese & Kaigo Training Center
+                                                                が約束するのは、楽しくフレンドリーな環境で日本語を学ぶことです。学習は、幸せでプロセスを楽しんでいるときに最も速く行われるからです。時間が経つにつれて、日本語を流暢に話し、読み、書き、聞く自信がつきます。
+                                                            @else
+                                                                GA Japanese & Kaigo Training Center Unique Teaching Method
+                                                                emphasises on the speaking component more so than the other
+                                                                three. This unique teaching style is not available in many
+                                                                other
+                                                                Japanese language schools in Myanmar, which use traditional
+                                                                ways
+                                                                of teaching that limit progress. <br><br>
+
+
+                                                                On top of that, GA Japanese & Kaigo Training Center
+                                                                regularly
+                                                                sources high-quality and useful modern language textbooks in
+                                                                Japan, bringing together the best of teaching materials so
+                                                                as to
+                                                                propel students to master the language faster and with a
+                                                                high
+                                                                level of proficiency. <br><br>
+
+                                                                Above all, what GA Japanese & Kaigo Training Center promises
+                                                                is
+                                                                for you to learn Japanese in a fun and friendly environment
+                                                                because learning takes place the fastest when one is happy
+                                                                and
+                                                                enjoys the process. Over time, you will build up the
+                                                                confidence
+                                                                to speak, read, write and listen to Japanese fluently.
+                                                            @endif
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container pb-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tm-owl-carousel-4col" data-dots="true" data-nav="true">
+                        <div class="item">
+                            <img src="{{ asset('data/e1.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+                        <div class="item">
+                            <img src="{{ asset('data/e2.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e3.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e4.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e5.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e6.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e7.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e8.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ asset('data/e9.jpeg') }}" alt="images"
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container" data-tm-padding-bottom="250px">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5 m-lg-auto">
+                    <div class="whychose-thumb">
+                        <img class="img-fullwidth" src="{{ asset('assets/images/photos/3.png') }}" alt="WhyChoseImage">
+                    </div>
+                </div>
+                <div class="col-xl-7 pl-50">
+                    <h2 class="title line-bottom mb-20 mt-0">Why <span class="text-theme-color-red">Choose Us</span> ?
+                    </h2>
+                    <p class="mb-50">The Cweren Law Firm is a recognized leader in landlord tenant representation
+                        throughout Texas.The largests professional property management companies the region.The largest
+                        professional property management companies is a recognized leader in landlord tenant representation
+                        throughout Texas</p>
+                    <div class="row">
+                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="icon-box text-center">
+                                <a href="#"
+                                    class="icon bg-theme-colored3 icon-circled icon-border-effect effect-circle icon-md">
+                                    <i class="fas fa-bell text-white"></i>
+                                </a>
+                                <h5 class="icon-box-title mt-15 mb-0 letter-space-1 text-uppercase">Responsive</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <div class="icon-box text-center">
+                                <a href="#"
+                                    class="icon bg-theme-colored2 icon-circled icon-border-effect effect-circle icon-md">
+                                    <i class="fas fa-pencil-alt text-white"></i>
+                                </a>
+                                <h5 class="icon-box-title mt-15 mb-0 letter-space-1 text-uppercase">Validation</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="icon-box text-center">
+                                <a href="#"
+                                    class="icon bg-theme-colored4 icon-circled icon-border-effect effect-circle icon-md">
+                                    <i class="fas fa-certificate text-white"></i>
+                                </a>
+                                <h5 class="icon-box-title mt-15 mb-0 letter-space-1 text-uppercase">Certification</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
 @section('script')
 @endsection
