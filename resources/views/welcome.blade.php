@@ -20,7 +20,6 @@
         }
     </style>
 
-
     @include('layouts.book')
 
     {{-- <section class="divider" data-tm-bg-img="{{ asset('assets/images/bg/b1.png') }}" data-tm-margin-top="-34px">
@@ -107,7 +106,7 @@
             </a>
         </div>
     </div>
-    <!-- About Myanmar -->
+
     <section data-tm-bg-color="#f5f5f5">
         <div class="container pt-30 pb-30">
             <div class="row">
@@ -130,8 +129,7 @@
                                         data-frame_999="x:-50,-38,-28,-17;o:0;st:w;sp:1500;sR:6740;" style="z-index:14;">
                                     </rs-layer>
                                     <rs-layer id="slider-3-slide-15-layer-19" data-type="text" data-color="#333333"
-                                        data-rsp_ch="on"
-                                        data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:246px,270px,210px,345px;"
+                                        data-rsp_ch="on" data-xy="x:l,l,l,c;xo:50px,50px,40px,0;yo:246px,270px,210px,345px;"
                                         data-text="w:normal;s:78,52,48,42;l:91,64,56,48;fw:700;a:left,left,left,center;"
                                         data-dim="w:652px,auto,auto,auto;h:189px,151px,126px,112px;"
                                         data-frame_0="y:bottom;" data-frame_1="st:1700;sp:1000;sR:1700;"
@@ -821,7 +819,7 @@
                 data-tm-opacity="-100px"></span>
         </div>
     </section>
-    <!-- Section: Course -->
+
     <section class="bg-img-cover bg-img-center" data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
         <div class="container pb-50">
             <div class="section-title">
@@ -956,8 +954,6 @@
     </section>
 
 
-
-    <!-- Case Study / Jobs Lists -->
     <section class="">
         <div class="container">
             <div class="tm-sc-section-title section-title text-center">
@@ -1064,10 +1060,6 @@
     </section>
 
 
-
-
-
-    <!-- Gallery -->
     <section data-tm-bg-color="#f5f5f5">
         <div class="container">
             <div class="section-title text-center mb-30">
@@ -1217,7 +1209,6 @@
         </div>
     </section>
 
-    <!-- Section: Team -->
     <section class="bg-img-cover bg-img-center" data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
         <div class="container pb-50">
             <div class="section-title">
@@ -1286,10 +1277,6 @@
     </section>
 
 
-   
-
-
-    <!-- Section: Blog -->
     <section class="our-blog bg-img-cover bg-img-center" data-tm-bg-img="{{ asset('assets/images/bg/p2.jpg') }}">
         <div class="container pb-90">
             <div class="section-title">
@@ -1411,7 +1398,6 @@
         </div>
     </section>
 
-    <!-- Section: Partners -->
     <section class="border-top bg-theme-colored2">
         <div class="container pb-20 pt-20">
             <div class="row">

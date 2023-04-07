@@ -3370,7 +3370,7 @@ header#header .menuzord-brand {
   }
 }
 header#header .menuzord-brand img {
-  max-height: 54px;
+  /* max-height: 54px; */
   width: auto;
   transition: all 0.3s ease;
 }

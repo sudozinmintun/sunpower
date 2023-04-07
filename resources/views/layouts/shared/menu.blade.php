@@ -56,11 +56,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-start">
-                    <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
-                        <img class="logo-default logo-1x" src="{{ asset('assets/images/logo-wide.png') }}"
-                            alt="Logo">
-                        <img class="logo-default logo-2x retina" src="{{ asset('assets/images/logo-wide%402x.png') }}"
-                            alt="Logo">
+                    {{-- menuzord-brand --}}
+                    <a class="menuzord-brand site-brand" href="{{ route('home') }}">
+                        <img class="logo-default" src="https://allaccessmyanmar.com/wordpress/wp-content/themes/amm/assets/img/common/logo.png" alt="Logo" style="width: 70%;">
+                        {{-- <img class="logo-default logo-2x retina" src="{{ asset('data/logo.jpeg') }}" alt="Logo"> --}}
                     </a>
                 </div>
                 <div class="col-xl-auto align-self-center ms-xl-auto header-mid-right text-center text-xl-end">
@@ -158,7 +157,7 @@
                                         </a>
                                         <ul class="dropdown">
                                             <li>
-                                                <a href="{{ route('home') }}">
+                                                <a href="{{ route('training.index') }}">
                                                     @if (session('key') == 'jp')
                                                         技能実習生
                                                     @else
@@ -168,7 +167,7 @@
                                             </li>
 
                                             <li>
-                                                <a href="{{ route('home') }}">
+                                                <a href="{{ route('specified_skilled') }}">
                                                     @if (session('key') == 'jp')
                                                         特定技能実習生
                                                     @else
@@ -200,7 +199,7 @@
                                     </li>
 
                                     <li class="menu-item">
-                                        <a href="{{ route('home') }}">
+                                        <a href="{{ route('services.index') }}">
                                             @if (session('key') == 'jp')
                                                 視察と入国ビザ
                                             @else

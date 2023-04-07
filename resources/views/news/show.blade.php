@@ -74,19 +74,18 @@
                                     <h5 class="float-start flip mt-0 mr-3 text-theme-colored1">Share:</h5>
                                     <ul class="styled-icons icon-circled m-0">
                                         <li>
-                                            <a href="#" data-tm-bg-color="#3A5795">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ url()->current() }}"
+                                                data-tm-bg-color="#3A5795">
                                                 <i class="fab fa-facebook text-white"></i>
                                             </a>
                                         </li>
+
                                         <li>
-                                            <a href="#" data-tm-bg-color="#55ACEE">
+                                            <a href="https://twitter.com/intent/tweet?url={{ url()->current() }}"
+                                                data-tm-bg-color="#55ACEE">
                                                 <i class="fab fa-twitter text-white"></i></a>
                                         </li>
-                                        <li>
-                                            <a href="#" data-tm-bg-color="#A11312">
-                                                <i class="fab fa-google-plus text-white"></i>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
