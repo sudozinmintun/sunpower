@@ -57,8 +57,10 @@
         <div class="container pb-70">
             <div class="section-title text-center">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                        @if (session('key') == 'jp')
+                    <div class="col-md-12 col-md-offset-2 col-sm-12 col-xs-12">
+                        <div class="tm-sc-section-title section-title text-center">
+                            <div class="title-wrapper">
+                                @if (session('key') == 'jp')
                             <h2 class="mt-0 line-height-1 text-center text-uppercase">
                                 <span class="text-theme-colored3">
                                     当社について
@@ -70,6 +72,9 @@
                                 <span class="text-theme-colored3">Our Company</span>
                             </h2>
                         @endif
+                            </div>
+                        </div>
+                       
 
                         <p>
                             @if (session('key') == 'jp')
@@ -93,7 +98,7 @@
                         }
 
                         .thcss {
-                            background-color: #D29F2A;
+                            background-color: #deb24e;
                             width: 17%;
                             color: white;
                             text-align: center;
@@ -104,7 +109,7 @@
                         }
 
                         .tdcss {
-                            background-color: #5d533c;
+                            background-color: #c7af79;
                             width: 50%;
                             color: white;
                             text-align: left;
@@ -112,6 +117,7 @@
                             font-weight: 700px;
                             line-height: 26px;
                             padding: 20px;
+                            text-align: center;
                         }
                     </style>
                     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -125,13 +131,13 @@
                                             Company Name
                                         @endif
                                     </th>
-                                    <td class="tdcss">
+                                    <td class="thcss">
                                         GA Japanese & Kaigo Training Center
                                     </td>
                                 </tr>
 
                                 <tr>
-                                    <th class="thcss">
+                                    <th class="tdcss">
                                         @if (session('key') == 'jp')
                                             設立日
                                         @else
@@ -151,14 +157,14 @@
                                             Head Office
                                         @endif
                                     </th>
-                                    <td class="tdcss">
+                                    <td class="thcss">
                                         No.981, GA (29 Ward), Pyi Htaung Su Main Road, North Dagon Township, Yangon,
                                         Myanmar.
                                     </td>
                                 </tr>
 
                                 <tr>
-                                    <th class="thcss">
+                                    <th class="tdcss">
                                         @if (session('key') == 'jp')
                                             代表者
                                         @else
@@ -177,12 +183,12 @@
                                             Telephone Number
                                         @endif
                                     </th>
-                                    <td class="tdcss">
+                                    <td class="thcss">
                                         09 269 101 211
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="thcss">
+                                    <th class="tdcss">
                                         @if (session('key') == 'jp')
                                             ライセンス
                                         @else
@@ -202,14 +208,14 @@
                                             Facebook
                                         @endif
                                     </th>
-                                    <td class="tdcss">
+                                    <td class="thcss">
                                         <a href="https://www.facebook.com/GATrainingSchool" class="text-white">
                                             https://www.facebook.com/GATrainingSchool
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="thcss">
+                                    <th class="tdcss">
                                         @if (session('key') == 'jp')
                                             メールアドレス
                                         @else
@@ -230,12 +236,46 @@
         </div>
     </section>
 
-    <section class="bg-lighter">
-        <div class="container pb-70 pb-sm-60">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        @if (session('key') == 'jp')
+  
+<style>
+    .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
+    <!-- Section: Pricing Table -->
+<section class="pricing-table" data-tm-bg-color="#f7f7f7">
+    <div class="container pb-90">
+        <div class="section-title">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="tm-sc-section-title section-title text-center">
+                        <div class="title-wrapper">
+                            @if (session('key') == 'jp')
                             <h2 class="text-center line-height-1 mt-0">
                                 <span class="text-theme-colored3">当社の声明 </span>
                             </h2>
@@ -244,7 +284,6 @@
                                 Our <span class="text-theme-colored3">Company </span>Statement
                             </h2>
                         @endif
-
                         <p class="text-center">
                             @if (session('key') == 'jp')
                                 日本語学習、人材育成のためのミャンマー日本研修センター。
@@ -252,193 +291,373 @@
                                 Japan Training Center in Myanmar for Japanese learning, development human resources.
                             @endif
                         </p>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row equal-height">
-                    <div class="col-sm-4 col-md-4">
-                        <div class="icon-box bg-white text-center clearfix m-0 pr-20 pl-20 pt-30 pb-20 mb-40"
-                            style="height: 280px; background-image: linear-gradient(to right, #D4A231 , #e4dcca);">
-                            <a href="javascript:void(0)" class="icon icon-circled icon-md flip mb-20">
-                                <img src="{{ asset('data/focus.png') }}" alt="">
-                            </a>
-                            <h3 class="icon-box-title mt-5 mb-15 letter-space-1 line-height-1">
-                                @if (session('key') == 'jp')
-                                    私たちのビジョン
-                                @else
-                                    Our Vision
-                                @endif
-                            </h3>
-                            <p style="text-align: justify; color: black; font-weight: bold;">
-                                @if (session('key') == 'jp')
-                                    優秀な社員に海外での就業機会を提供し、生活の質を向上させる
-                                @else
-                                    To improve the quality of skillful employees lives by giving them overseas job
-                                    opportunities.
-                                @endif
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="icon-box bg-white text-center clearfix m-0 pr-20 pl-20 pt-30 pb-20 mb-40"
-                            style="height: 280px; background-image: linear-gradient(to right, #498F09 , #9FD13F);">
-                            <a href="javascript:void(0)" class="icon icon-circled icon-md flip mb-20">
-                                <img src="{{ asset('data/goal.png') }}" alt="">
-                            </a>
-                            <h3 class="icon-box-title mt-5 mb-15 letter-space-1 line-height-1">
-                                @if (session('key') == 'jp')
-                                    我々の使命
-                                @else
-                                    Our Mission
-                                @endif
-                            </h3>
-                            <p style="text-align: justify; color: black; font-weight: bold;">
-                                @if (session('key') == 'jp')
-                                    クライアントと提携することで、優れた企業と優れた従業員を結びつけ、両方の機会を開拓すること。
-                                @else
-                                    To connect great companies with great employees and opening up opportunities for both by
-                                    partnering up with our clients.
-                                @endif
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="icon-box bg-white text-center clearfix m-0 pr-20 pl-20 pt-30 pb-20 mb-40"
-                            style="height: 285px; background-image: linear-gradient(to right, #512989, #9F585B);"">
-                            <a href="javascript:void(0)" class="icon icon-circled icon-md flip mb-20">
-                                <img src="{{ asset('data/motivation.png') }}" alt="">
-                            </a>
-                            <h3 class="icon-box-title mt-5 mb-15 letter-space-1 line-height-1">
-                                @if (session('key') == 'jp')
-                                    私たちの価値
-                                @else
-                                    Our Value
-                                @endif
-                            </h3>
-                            <p style="text-align: justify; color: black; font-weight: bold;">
-                                @if (session('key') == 'jp')
-                                    私たちは知識を追求し、お客様により大きな価値を提供します。そのため、私たちは生涯学習の実践に取り組み、謙虚であり続け、あらゆる面でサービスを継続的に改善しています。
-                                @else
-                                    We pursue knowledge to deliver greater value for our clients. As such, we engage in
-                                    lifelong learning practices to stay humble and continuously improve our services on all
-                                    fronts.
-                                @endif
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="section-content">
+            <div class="row">
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="tm-sc-pricing-table p--0 mb-30" data-tm-border-radius="0">
+                        <div class="pricing-table-inner-wrapper">
+                            <div class="pricing-table-head  p-20" style="background-color: #D29F2A">
+                                <div class="pricing-table-pricing">
+                                    
+                                    
+                                        <a href="https://codepen.io/uiswarup/full/wvjZgar" target="_blank">
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-md-3 text-center">
+                                                  <h6 class="animate-charcter" > 
+                                                    @if (session('key') == 'jp')
+                                                        私たちのビジョン
+                                                    @else
+                                                        Our Vision
+                                                    @endif
+                                                
+                                                  </h6>
+                                                 
+                                                    
+                                                </h3>
 
+                                                </div>
+                                              </div>
+                                            </div>
+                                              </a>
+                                    
+                                </div>
+                            </div>
+                            
+                           <center>
+                            <div class="pricing-table-thumb">
+                                <img class="" src="{{ asset('data/focus.png') }}"
+                                    alt="Image"  style="width:80px;height:80px;">
+                            </div>
+                           </center>
+                            <div class="pricing-table-inner">
+                                <div class="pricing-table-head pl-30 pt-30">
+                                    
+                                </div>
+                                <div class="pricing-table-content pl-30 pt-0 mt--0">
+                                    <ul>
+                                        
+                                            <li>
+                                                <i class="far fa-heart mr-10 text-theme-colored2">
 
-    <section>
-        <div class="container pb-sm-70">
-            <div class="section-title text-center">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-                        <h2 class="mt-0 line-height-1">
-                            Faculty
-                            <span class="text-theme-colored3">Members</span>
-                        </h2>
-                        <p>
-                            @if (session('key') == 'jp')
-                                アジア全体でプロセスの合理化を開始するには、今すぐ私たちのいずれかに連絡してください。
-                            @else
-                                Get in touch with one of us today to start streamlining your processes across Asia.
-                            @endif
-                        </p>
+                                                </i>
+                                            @if (session('key') == 'jp')
+                                                優秀な社員に海外での就業機会を提供し、生活の質を向上させる
+                                            @else
+                                                To improve the quality of skillful employees lives by giving them overseas job
+                                                opportunities.
+                                            @endif
+                                            To improve the quality of skillful employees lives by giving them overseas job opportunities.
+                                          </li>
+                                          
+                                            
+                                    </ul>
+                                </div>
+                                <div class="pricing-table-footer d-grid">
+                                    <a href="#" target="_self" class="btn  btn-flat" style="background-color: #D29F2A">
+                                        @if (session('key') == 'jp')
+                                            私たちのビジョン
+                                        @else
+                                            Our Vision
+                                         @endif 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="tm-sc-pricing-table p--0 mb-30" data-tm-border-radius="0">
+                        <div class="pricing-table-inner-wrapper">
+                            <div class="pricing-table-head  p-20" style="background-color: #498F09;">
+                                <div class="pricing-table-pricing">
+                                    
+                                    
+                                        <a href="https://codepen.io/uiswarup/full/wvjZgar" target="_blank">
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-md-3 text-center">
+                                                  <h6 class="animate-charcter" > 
+                                                   
+                                                    @if (session('key') == 'jp')
+                                                        我々の使命
+                                                    @else
+                                                        Our Mission
+                                                    @endif
+                                                </h6>
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                              </a>
+                                    
+                                </div>
+                            </div>
+                            
+                           <center>
+                            <div class="pricing-table-thumb">
+                                <img class="" src="{{ asset('data/goal.png') }}"
+                                    alt="Image"  style="width:80px;height:80px; ">
+                            </div>
+                           </center>
+                            <div class="pricing-table-inner">
+                                <div class="pricing-table-head pl-30 pt-30">
+                                    
+                                </div>
+                                <div class="pricing-table-content pl-30 pt-0 mt--0">
+                                    <ul>
+                                        
+                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>
+                                                @if (session('key') == 'jp')
+                                                クライアントと提携することで、優れた企業と優れた従業員を結びつけ、両方の機会を開拓すること。
+                                            @else
+                                                To connect great companies with great employees and opening up opportunities for both by
+                                                partnering up with our clients.
+                                            @endif
+                                            </li>
+                                            
+                                    </ul>
+                                </div>
+                                <br>
+                                <div class="pricing-table-footer d-grid">
+                                    <a href="#" target="_self" class="btn  btn-flat" style="background-color: #498F09;">
+                                         
+                                    @if (session('key') == 'jp')
+                                        我々の使命
+                                    @else
+                                        Our Mission
+                                    @endif
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="tm-sc-pricing-table p--0 mb-30" data-tm-border-radius="0">
+                        <div class="pricing-table-inner-wrapper">
+                            <div class="pricing-table-head  p-20" style="background-color: #3ab7a4">
+                                <div class="pricing-table-pricing">
+                                    
+                                    
+                                        <a href="https://codepen.io/uiswarup/full/wvjZgar" target="_blank">
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-md-3 text-center">
+                                                  <h6 class="animate-charcter" > 
+                                                    
+                                                    @if (session('key') == 'jp')
+                                                         私たちの価値
+                                                    @else
+                                                            Our Values
+                                                    @endif
+                                                </h6>
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                              </a>
+                                    
+                                </div>
+                            </div>
+                            
+                           <center>
+                            <div class="pricing-table-thumb">
+                                <img class="" src="{{ asset('data/motivation.png') }}"
+                                    alt="Image"  style="width:80px;height:80px; ">
+                            </div>
+                           </center>
+                            <div class="pricing-table-inner">
+                                <div class="pricing-table-head pl-30 pt-30">
+                                    
+                                </div>
+                                <div class="pricing-table-content pl-30 pt-0 mt--0">
+                                    <ul>
+                                           
+                                            <li><i class="far fa-heart mr-10 text-theme-colored2"></i>
+                                                @if (session('key') == 'jp')
+                                                    私たちは知識を追求し、お客様により大きな価値を提供します。そのため、私たちは生涯学習の実践に取り組み、謙虚であり続け、あらゆる面でサービスを継続的に改善しています。
+                                                @else
+                                                    We pursue knowledge to deliver greater value for our clients. As such, we engage in
+                                                    lifelong learning practices to stay humble and continuously improve our services on all
+                                                    fronts.
+                                                @endif
+                                            </li>
+                                            
+                                    </ul>
+                                </div>
+                                <div class="pricing-table-footer d-grid">
+                                    <a href="#" target="_self" class="btn  btn-flat" style="background-color: #3ab7a4">
+                                        
+                                        @if (session('key') == 'jp')
+                                        私たちの価値
+                                        @else
+                                                Our Values
+                                        @endif
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="section-content text-center">
-                <div class="row">
-
-                    <div class="col-sm-6 col-md-3 mb-sm-30">
-                        <div class="team-block bg-light pt-10 pb-15">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/team/2.png') }}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="pt-10 pb-10 bg-theme-colored">
-                                    <h4 class="mt-0 mb-0 text-white">Jone doe</h4>
-                                    <h6 class="mt-0 mb-0 text-white">Manager</h6>
-                                </div>
-                                <ul class="styled-icons icon-theme-colored3 icon-circled icon-dark icon-sm mt-15 mb-0">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3 mb-sm-30">
-                        <div class="team-block bg-light pt-10 pb-15">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/team/1.png') }}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="pt-10 pb-10 bg-theme-colored2">
-                                    <h4 class="mt-0 mb-0 text-white">Jone doe</h4>
-                                    <h6 class="mt-0 mb-0 text-white">Manager</h6>
-                                </div>
-                                <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-15 mb-0">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3 mb-sm-30">
-                        <div class="team-block bg-light pt-10 pb-15">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/team/3.png') }}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="pt-10 pb-10 bg-theme-colored3">
-                                    <h4 class="mt-0 mb-0 text-white">Jone doe</h4>
-                                    <h6 class="mt-0 mb-0 text-white">Manager</h6>
-                                </div>
-                                <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-15 mb-0">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-sm-30">
-                        <div class="team-block bg-light pt-10 pb-15">
-                            <div class="team-thumb">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/team/4.png') }}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="pt-10 pb-10 bg-theme-colored">
-                                    <h4 class="mt-0 mb-0 text-white">Jone doe</h4>
-                                    <h6 class="mt-0 mb-0 text-white">Manager</h6>
-                                </div>
-                                <ul class="styled-icons icon-theme-colored2 icon-circled icon-dark icon-sm mt-15 mb-0">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+        
+    </div>
+</section>
+<section>
+    <div class="container pb-80">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="sidebar">
+              <div class="widget widget_text text-center">
+                <img src="{{asset('data/ceo.jpg')}}" class="img-fullwidth" alt=""/>
+              </div>
+              
+              <div class="widget widget_text text-center">
+                <div class="textwidget">
+                  <div class=" mb-md-40 p-30 pt-40 pb-40"> <img class="size-full wp-image-900 aligncenter" src="{{asset('data/k4.png')}}" alt="" width="128" height="128"/>
+                  <h4>Online Help!</h4>
+                  <h5>+(959) 269 101 211</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="widget p-30 bg-white-fa">
+                <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Quick Contact!</h4>
+                <form id="quick_contact_form1" name="footer_quick_contact_form" class="quick-contact-form" action="" method="post">
+                  <div class="mb-3">
+                    <input name="form_email" class="form-control" type="text" placeholder="Enter Email">
+                  </div>
+                  <div class="mb-3">
+                    <textarea name="form_message" class="form-control" required placeholder="Enter Message" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                    <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Send Message</button>
+                  </div>
+                </form>
+
+                <!-- Quick Contact Form Validation-->
+                <script>
+                  (function($) {
+                    $("#quick_contact_form1").validate({
+                      submitHandler: function(form) {
+                        var form_btn = $(form).find('button[type="submit"]');
+                        var form_result_div = '#form-result';
+                        $(form_result_div).remove();
+                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                        var form_btn_old_msg = form_btn.html();
+                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                        $(form).ajaxSubmit({
+                          dataType:  'json',
+                          success: function(data) {
+                            if( data.status === 'true' ) {
+                              $(form).find('.form-control').val('');
+                            }
+                            form_btn.prop('disabled', false).html(form_btn_old_msg);
+                            $(form_result_div).html(data.message).fadeIn('slow');
+                            setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                          }
+                        });
+                      }
+                    });
+                  })(jQuery);
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <h3 class="mt-0">Mr.Thaw Zin Oo<small  class="text-muted" data-tm-font-size="1.2rem">/ Director</small ></h3>
+            <p>
+                With “Harmony and playful mind”, we develop each student’s potential.
+            </p>
+            <p>We, GA Japanese Language School, for more than 4 years since we established in 2020, have been implementing Japanese language education with “Harmony and playful mind”.　”Harmony” here means well-balanced and authentic culture as known as a characteristic of Japanese people.We provide some opportunities to experience Japanese traditional culture in class so that students find “FUN” in learning Japanese. Also, our goal is that we engage our students to have “FUN” and become a big “FAN” of Japan throughout our lessons.</p>
+            <p>
+                The staff and teachers cooperate to understand the students and their situations well, and accompany each students to realize ther dreams and goals. Furthermore, we organize four different courses of Japanese so that students choose depending on their individual goals. This firmly allows us to support our students to go on to the next stage, from higher education to employment in Japan.
+            </p>
+            <div class="row mb-30">
+              <div class="col-md-6">
+                <h4 class="mb-30">Experiences</h4>
+                <div class="tm-sc tm-timeline timeline-basic mb-sm-30">
+                  <div class="info-box">
+                    <h5 class="title">Teaching Expert</h5>
+                    <div class="subtitle">******</div>
+                    <div class="time">*******</div>
+                    <div class="content">
+                      <p><span>Teaching & Management</span></p>
+                    </div>
+                  </div>
+                  <div class="info-box">
+                    <h5 class="title">Teaching Expert</h5>
+                    <div class="subtitle">******</div>
+                    <div class="time">*******</div>
+                    <div class="content">
+                      <p><span>Teaching & Management</span></p>
+                    </div>
+                  </div>
+                  <div class="info-box">
+                    <h5 class="title">Teaching Expert</h5>
+                    <div class="subtitle">******</div>
+                    <div class="time">*******</div>
+                    <div class="content">
+                      <p><span>Teaching & Management</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h4 class="mb-30">Education</h4>
+                <div class="tm-sc tm-timeline timeline-basic">
+                  <div class="info-box">
+                    <h5 class="title">University of Belgrade</h5>
+                    <div class="subtitle">Master's degree - Computer University</div>
+                    <div class="time">2012 - 2013</div>
+                    <div class="content">
+                      <p>Software Engineering</p>
+                    </div>
+                  </div>
+                  <div class="info-box">
+                    <h5 class="title">Faculty of economics, Belgrade Graphic</h5>
+                    <div class="subtitle">Master's degreeEconomic (M.B>A)</div>
+                    <div class="time">2015 - 2020</div>
+                    <div class="content">
+                      <p>M.B.A</p>
+                    </div>
+                  </div>
+                  <div class="info-box">
+                    <h5 class="title">Faculty of Mathematics</h5>
+                    <div class="subtitle">Information Technology</div>
+                    <div class="time">2006 - 2008</div>
+                    <div class="content">
+                      <p>Member of volleyball team, sport club Economist, Faculty of Economics, Belgrade, Serbia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5>We consider both traditional and latest education strategy. All of the students, teachers, and staff cooperate and share their developments as well as always think of our future to evolve ourselves.</h5>
+            <p>
+                As a Japanese language school that meets any expectation from both our community and the society, we, GA Japanese Language school, keep our step forward.
+            </p>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
 @endsection
 @section('script')
